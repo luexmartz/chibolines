@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Chibolines</title>
+  
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Protection to CSRF-->
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <!-- Vars for Delimit content per page -->
+  <% @controlador = params[:controller] %>
+  <% @accion      = params[:action] %>
+
+  <!--Style and cources of each page in specific -->
+  <%= render 'layouts/stylesheet' %>
+
+  <!--Js of each page in specific-->
+  <%= render 'layouts/javascript' %>
+
+  <!--IE-->
+  <%= render 'layouts/shim' %>
+
+  <link rel="chibolin_favicon" href="chibolin_favicon.png">
+  <%= favicon_link_tag 'chibolin_favicon.png' %>
+
+  <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
