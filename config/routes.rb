@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  root  'static_pages#landing_page'
+
+  # Api v1 definition
+  namespace :api, defaults: { format: :json } do
+      resources :activities, only: [:index]
+      resources :babies, only: [:index]
+      resources :activity_logs, only: [:index, :update]
+
+      get '/babies/:id/activity_logs' => 'babies#activities'
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
