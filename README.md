@@ -23,6 +23,10 @@ Chibolines permite a los padres conocer el registro de las actividades diarias d
 
 ![alt text](https://pbs.twimg.com/media/C-2buNnXoAMbPsZ.jpg:large)
 
+##### Protectoras y Educadoras
+
+![alt text](https://pbs.twimg.com/media/C-28QgaXcAA5PBm.jpg:large)
+
 ### Installation
 
 Cosas que quizás quieras cubrir:
