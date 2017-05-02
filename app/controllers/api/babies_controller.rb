@@ -7,7 +7,13 @@ module Api
 
 		def index
 			begin
-		  	  render json: Baby.select(:id, :name, :birthday, :mother_name, :father_name, :address, :phone).order(sort_by + ' ' + order).to_json, status: :ok
+		  	  # render json: Baby.select(:id, :name, :birthday, :mother_name, :father_name, :address, :phone).order(sort_by + ' ' + order).to_json, status: :ok
+
+		  	  babies = Baby.select(:id, :name, :birthday, :mother_name, :father_name, :address, :phone).order(sort_by + ' ' + order)
+		      babies_hash = babies_make_hash(babies)
+
+			  render json: babies_hash.to_json, status: :ok
+
 	    	rescue Exception => e
 			  render nothing: true, status: :internal_server_error
 	        end

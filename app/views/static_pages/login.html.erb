@@ -1,23 +1,19 @@
-<div class="login">
-  <div class="login-screen">
-    <div class="login-icon">
-      <img src="img/login/icon.png" alt="Welcome to Mail App">
-      <h4>Welcome to <small>Mail App</small></h4>
+
+<div class="login-screen">
+  <div class="login-form">
+    <div class="form-group">
+      <input class="form-control login-field" value="Usuario Demo" placeholder="Enter your name" id="login-name" type="text">
+      <label class="login-field-icon fui-user" for="login-name"></label>
     </div>
 
-    <div class="login-form">
-      <div class="form-group">
-        <input class="form-control login-field" value="" placeholder="Enter your name" id="login-name" type="text">
-        <label class="login-field-icon fui-user" for="login-name"></label>
-      </div>
-
-      <div class="form-group">
-        <input class="form-control login-field" value="" placeholder="Password" id="login-pass" type="password">
-        <label class="login-field-icon fui-lock" for="login-pass"></label>
-      </div>
-
-      <a class="btn btn-primary btn-lg btn-block" href="#">Log in</a>
-      <a class="login-link" href="#">Lost your password?</a>
+    <div class="form-group">
+      <input class="form-control login-field" value="Password" placeholder="Password" id="login-pass" type="password">
+      <label class="login-field-icon fui-lock" for="login-pass"></label>
+    </div>
+  
+    <div class="form-group" id="form-btn">
+      <%= link_to "Comenzar", activity_logs_path, class: "btn btn-primary btn-lg btn-block" %>
+      <a class="login-link" href="#"></a>
     </div>
   </div>
 </div>

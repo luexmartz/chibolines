@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   match '/activities',    to: 'activities#dashboard',    via: 'get', :path => :actividades
   match '/babies',        to: 'babies#dashboard',        via: 'get', :path => :bebes
   match '/activity_logs', to: 'activity_logs#dashboard', via: 'get'
+  match '/login',         to: 'static_pages#login',      via: 'get'
 
   # Api v1 definition
   namespace :api, defaults: { format: :json } do

@@ -3,9 +3,7 @@
   <div class="container-lrg">
     <div class="col-12 spread">
       <div>
-        <a class="logo">
-          Chibolines
-        </a>
+        <%= link_to "Chibolines", root_path, class: "logo" %>
       </div>
       <div>
         <a class="nav-link" href="#">
@@ -27,9 +25,7 @@
         Comunicación entre el centro infantil y la familia centralizada en una herramienta que cautiva a padres y educadores
       </h2>
       <div class="ctas">
-        <a class="ctas-button" href="">
-          Demo
-        </a>
+        <%= link_to "Comenzar", login_path, class: "ctas-button" %>
       </div>
     </div>
     <div class="col-6 sidedevices">
@@ -80,7 +76,7 @@
           Notificaciones
         </h3>
         <p class="paragraph">
-          Launchaco instantly shows you the most relevant domain names. Followed by hundreds of new gtlds. Get your .gold domain name today!
+          Notificaciones personalizadas de las actividades que realizan los pequeños en el centro educativo.
         </p>
       </div>
       <div class="steps">
@@ -93,7 +89,7 @@
           Comunicación
         </h3>
         <p class="paragraph">
-          Notificaciones personalizadas de las actividades que realizan los pequeños en el centro educativo.
+          Comunicación entre el centro educativo  y los padres al alcance, sin interferir en las actividades de padres e hijos 
         </p>
       </div>
       <div class="steps">
@@ -106,7 +102,7 @@
           Progreso
         </h3>
         <p class="paragraph">
-          Comunicación entre el centro educativo &nbsp;y los padres al alcance, sin interferir en las actividades de padres e hijos
+          Actividades que estimulan el correcto progreso de tu principe o princesa.
         </p>
       </div>
     </div>
@@ -135,15 +131,15 @@
     <div class="flex text-center">
       <div class="col-3">
         <h6 class="heading">
-          100
+          <%= @babies %>
         </h6>
         <b class="paragraph">
-          principes y princesas
+          Principes y Princesas
         </b>
       </div>
       <div class="col-3">
         <h6 class="heading">
-          10
+          <%= @assistants %>
         </h6>
         <b class="paragraph">
           Protectoras y Educadoras
@@ -151,7 +147,7 @@
       </div>
       <div class="col-3">
         <h6 class="heading">
-          8
+          <%= @activities %>
         </h6>
         <b class="paragraph">
           Tipos de Actividades
@@ -159,7 +155,7 @@
       </div>
       <div class="col-3">
         <h6 class="heading">
-          100
+          <%= @activity_logs %>
         </h6>
         <b class="paragraph">
           Actividades Hechas
@@ -189,9 +185,7 @@
         ¡Prueba Chibolines sin límites de tiempo y completamente gratis!
       </h5>
       <div class="ctas">
-        <button class="ctas-button">
-        Demo
-        </button>
+        <%= link_to "Comenzar", login_path, class: "ctas-button" %>
       </div>
     </div>
   </div>
@@ -208,7 +202,7 @@
       <br>
       <div>
         <span>
-          © 2017 CromáTIC.
+          © 2017 Chibolines.
         </span>
       </div>
     </div>

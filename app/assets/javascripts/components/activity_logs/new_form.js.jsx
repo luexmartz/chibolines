@@ -55,7 +55,6 @@ var NewForm = React.createClass({
   handleChange: function(e) {
     var input_name = e.target.name;
     var value = e.target.value;
-    console.log("["+input_name+"] :" + value)
     this.setState({ [input_name] : value });
   },
   render: function() {
@@ -64,19 +63,22 @@ var NewForm = React.createClass({
         <nav className="navbar navbar-default" role="navigation">
           <div className="container-fluid">
             <form className="navbar-form form-inline" role="add" onSubmit={this.handleAdd}>
-
               <div className="form-group pull-left">
-                <select id="baby_id" name="baby_id" ref="baby_id" value={this.state.baby_id} onChange={this.handleChange} className="form-control">
-                  <option value="0"></option>
+                <select id="baby_id" name="baby_id" ref="baby_id" value={this.state.baby_id} onChange={this.handleChange} className="form-control select-primary">
+                  <option value="0">Selecciona Bebe</option>
                 </select>
-
-                <select id="assistant_id" name="assistant_id" ref="assistant_id" value={this.state.assistant_id} onChange={this.handleChange} className="form-control">
-                  <option value="0"></option>
+              </div>
+              <div className="form-group pull-left">
+                <select id="assistant_id" name="assistant_id" ref="assistant_id" value={this.state.assistant_id} onChange={this.handleChange} className="form-control select-primary">
+                  <option value="0">Selecciona Asistente</option>
                 </select>
-
-                <select id="activity_id" name="activity_id" ref="activity_id" value={this.state.activity_id} onChange={this.handleChange} className="form-control">
-                  <option value="0"></option>
+              </div>
+              <div className="form-group pull-left">
+                <select id="activity_id" name="activity_id" ref="activity_id" value={this.state.activity_id} onChange={this.handleChange} className="form-control select-primary">
+                  <option value="0">Selecciona Actividad</option>
                 </select>
+              </div>
+              <div className="form-group pull-left datetime">
                 <div className='input-group date' id='datetimepicker1'>
                   <input type='text'
                          id="start_time"

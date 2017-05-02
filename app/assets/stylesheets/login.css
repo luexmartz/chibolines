@@ -1,0 +1,22 @@
+html, body, .login-screen{
+	height: 100%;
+}
+.login-form{
+	min-width: 400px;
+}
+#login-name, #login-pass{
+	width: 100%;
+}
+.btn-primary{
+	margin-left: calc(50% - 59px);
+}
+#form-btn{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.login-screen {
+    background-color: #396bf7;
+}
+.form-control.login-field{
+	text-align: center;
+}

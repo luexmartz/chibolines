@@ -58,5 +58,6 @@ $(document).ready(function(){
 	$(document).on("dp.change", "#datetimepicker1", function(e) {
 		// $(".start_time").val().trigger('change');
 		$(".start_time").trigger( "click" );
-	})
+		$("#baby_id").trigger( "click" );
+	});
 });

@@ -1,2 +1,8 @@
 <!-- General Js -->
-<%= javascript_include_tag 'application', 'custom.js', params[:controller], 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', params[:controller], 'data-turbolinks-track' => true %>
+
+<% if @controlador != "static_pages" %>
+	<%= javascript_include_tag 'flat-ui.min.js', 'custom.js', 'data-turbolinks-track' => true %>
+<% elsif @accion != "landing_page" %>
+	<%= javascript_include_tag 'flat-ui.min.js', 'data-turbolinks-track' => true %>
+<% end %>

@@ -20,21 +20,22 @@ var EventTable = React.createClass({
       <table className="table table-striped">
         <thead>
           <tr>
-            <th className="col-md-4 sortable">
+            <th className="col-md-2 sortable">
               <SortColumn name="name"
                           text="Nombre"
                           sort={this.props.sort}
                           order={this.props.order}
                           handleSortColumn={this.handleSortColumn}/>
             </th>
-            <th className="col-md-6 sortable">
+            <th className="col-md-8 sortable">
               <SortColumn name="description"
                           text="Descripción"
                           sort={this.props.sort}
                           order={this.props.order}
                           handleSortColumn={this.handleSortColumn}/>
             </th>
-            <th className="col-md-2 sortable"></th>
+            <th className="col-md-1 sortable"></th>
+            <th className="col-md-1 sortable"></th>
           </tr>
         </thead>
         <tbody>

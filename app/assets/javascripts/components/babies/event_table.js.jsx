@@ -20,49 +20,50 @@ var EventTable = React.createClass({
       <table className="table table-striped">
         <thead>
           <tr>
-            <th className="col-md-4 sortable">
+            <th className="col-md-1 sortable">
               <SortColumn name="name"
                           text="Nombre"
                           sort={this.props.sort}
                           order={this.props.order}
                           handleSortColumn={this.handleSortColumn}/>
             </th>
-            <th className="col-md-6 sortable">
+            <th className="col-md-1 sortable">
               <SortColumn name="birthday"
-                          text="Cumpleaños"
+                          text="Nacimiento"
                           sort={this.props.sort}
                           order={this.props.order}
                           handleSortColumn={this.handleSortColumn}/>
             </th>
-            <th className="col-md-6 sortable">
+            <th className="col-md-2 sortable">
               <SortColumn name="mother_name"
                           text="Nombre de Mami"
                           sort={this.props.sort}
                           order={this.props.order}
                           handleSortColumn={this.handleSortColumn}/>
             </th>
-            <th className="col-md-6 sortable">
+            <th className="col-md-2 sortable">
               <SortColumn name="father_name"
                           text="Nombre de Papi"
                           sort={this.props.sort}
                           order={this.props.order}
                           handleSortColumn={this.handleSortColumn}/>
             </th>
-            <th className="col-md-6 sortable">
+            <th className="col-md-3 sortable">
               <SortColumn name="address"
                           text="Dirección"
                           sort={this.props.sort}
                           order={this.props.order}
                           handleSortColumn={this.handleSortColumn}/>
             </th>
-            <th className="col-md-6 sortable">
+            <th className="col-md-1 sortable">
               <SortColumn name="phone"
                           text="Número de contacto"
                           sort={this.props.sort}
                           order={this.props.order}
                           handleSortColumn={this.handleSortColumn}/>
             </th>
-            <th className="col-md-2 sortable"></th>
+            <th className="col-md-1 sortable"></th>
+            <th className="col-md-1 sortable"></th>
           </tr>
         </thead>
         <tbody>

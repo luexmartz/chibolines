@@ -1,0 +1,28 @@
+<nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <%= link_to "Chibolines", root_path, class: "navbar-brand" %>
+  </div>
+  <div class="collapse navbar-collapse" id="navbar-collapse-01">
+    <ul class="nav navbar-nav navbar-left">
+      <li>
+        <%= link_to activity_logs_path, :class => "" do %>
+          Lista de actividades
+          <span class="navbar-unread"></span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to babies_path, :class => "" do %>
+          Principes y Princesas
+        <% end %>  
+      </li>
+      <li>
+        <%= link_to activities_path, :class => "" do %>
+          Tipos de Actividades
+        <% end %> 
+      </li>
+     </ul>
+  </div><!-- /.navbar-collapse -->
+</nav><!-- /navbar -->

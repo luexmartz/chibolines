@@ -63,8 +63,7 @@ var EventApplication = React.createClass({
       <div className="container">
         <div id="upload-alerts" class="container"></div>
         <div className="jumbotron">
-          <h1>Chibolines</h1>
-          <p>Asistentes</p>
+          <h4>Actividades</h4>
         </div>
         <div className="row">
           <div className="col-md-12">

@@ -56,7 +56,6 @@ var NewForm = React.createClass({
   handleChange: function(e) {
     var input_name = e.target.name;
     var value = e.target.value;
-    console.log(input_name + " : " + value);
     this.setState({ [input_name] : value });
   },
   render: function() {
@@ -119,7 +118,7 @@ var NewForm = React.createClass({
                  value={this.state.phone}
                  onChange={this.handleChange} />
         </div>
-        <button type="submit" className="btn btn-primary pull-right">Agregar</button>
+        <button type="submit" className="btn btn-primary pull-right add">Agregar</button>
       </form>
     )
   }

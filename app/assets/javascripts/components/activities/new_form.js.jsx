@@ -50,16 +50,8 @@ var NewForm = React.createClass({
   render: function() {
     return(
       <form className="form-inline" onSubmit={this.handleAdd}>
-        <div className="form-group">
-          <input type="text"
-                 className="form-control"
-                 name="name"
-                 placeholder="Nombre"
-                 ref="name"
-                 value={this.state.name}
-                 onChange={this.handleChange} />
-        </div>
-        <div className="form-group">
+        <button type="submit" className="btn btn-primary pull-right">Agregar</button>
+        <div className="form-group pull-right">
           <input type="text"
                  className="form-control"
                  name="description"
@@ -68,7 +60,15 @@ var NewForm = React.createClass({
                  value={this.state.description}
                  onChange={this.handleChange} />
         </div>
-        <button type="submit" className="btn btn-primary">Agregar</button>
+        <div className="form-group pull-right">
+          <input type="text"
+                 className="form-control"
+                 name="name"
+                 placeholder="Nombre"
+                 ref="name"
+                 value={this.state.name}
+                 onChange={this.handleChange} />
+        </div>
       </form>
     )
   }

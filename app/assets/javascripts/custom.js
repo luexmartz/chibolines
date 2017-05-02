@@ -1,5 +1,10 @@
 $(document).ready(function(){
 	$('.dropdown-toggle').dropdown();
+
+  // Custom Selects
+  if ($('[data-toggle="select"]').length) {
+    $('[data-toggle="select"]').select2();
+  }
 });
 
 function createNotification(alert_type, text){

@@ -63,13 +63,10 @@ var EventApplication = React.createClass({
       <div className="container">
         <div id="upload-alerts" class="container"></div>
         <div className="jumbotron">
-          <h1>Chibolines</h1>
-          <p>Principes y Princesas</p>
+          <h4>Principes y Princesas</h4>
         </div>
         <div className="row">
-          <div className="col-md-12">
-            <NewForm handleAdd={this.handleAdd} />
-          </div>
+          <NewForm handleAdd={this.handleAdd} />
         </div>
         <hr></hr>
         <div className="row">

@@ -2,6 +2,16 @@
 <% case @controlador%>
 	<% when "static_pages" %>
 		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<% else %>
+		<%= render 'layouts/navbar' %>
 <% end %>
 
 <%= yield %>
+
+<% if @controlador != "static_pages" %>
+	<footer>
+		<div class="container footer">
+			<span class="text-muted">Chibolines S.A. de C.V.</span>
+		</div>
+	</footer>
+<% end %>

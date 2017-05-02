@@ -24,6 +24,34 @@ module BabiesHelper
 	      return activity_logs_hash
   	end
 
+  	def babies_make_hash(babies)
+	    babies_hash = []
+	    cont = 0
+	    babies.each do |baby|  
+	        babies_hash[cont] = {}
+	        babies_hash[cont]["id"]              = baby.id
+	        babies_hash[cont]["name"]            = baby.name
+	        
+			#Get age 
+			today    = DateTime.now
+			birthday = baby.birthday.to_time
+			months = ((today.year * 12) + today.month) - ((birthday.year * 12) + birthday.month)
+			if today.day < birthday.day
+				months = months - 1
+			end
+		
+	        babies_hash[cont]["age_months"]      = months
+	        babies_hash[cont]["birthday"]        = baby.birthday
+	        babies_hash[cont]["mother_name"]     = baby.mother_name
+	        babies_hash[cont]["father_name"]     = baby.father_name
+	        babies_hash[cont]["address"]         = baby.address
+	        babies_hash[cont]["phone"]           = baby.phone
+	        cont = cont + 1
+	      end
+
+	      return babies_hash
+  	end
+
 	def validate_date(date_str)
 	    valid_formats = ["%Y-%m-%d"] 
 	    valid_formats.each do |format|

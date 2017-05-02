@@ -40,15 +40,17 @@ var SearchForm = React.createClass({
             <form className="navbar-form form-inline" role="search" onSubmit={this.handleSearch}>
               
               <div className="form-group pull-left">
-                <select id="baby_id" name="baby_id" ref="baby_id" value={this.state.baby_id} onChange={this.handleChange} className="form-control">
-                  <option value=""></option>
+                <select id="baby_id" name="baby_id" ref="baby_id" value={this.state.baby_id} onChange={this.handleChange} className="form-control select-primary">
+                  <option value="">Selecciona Bebe</option>
                 </select>
-
-                <select id="assistant_id" name="assistant_id" ref="assistant_id" value={this.state.assistant_id} onChange={this.handleChange} className="form-control">
-                  <option value=""></option>
+              </div>
+              <div className="form-group pull-left">
+                <select id="assistant_id" name="assistant_id" ref="assistant_id" value={this.state.assistant_id} onChange={this.handleChange} className="form-control select-primary">
+                  <option value="">Selecciona Asistente</option>
                 </select>
-
-                <select id="status" name="status" ref="status" value={this.state.status} onChange={this.handleChange} className="form-control">
+              </div>
+              <div className="form-group pull-left">
+                <select id="status" name="status" ref="status" value={this.state.status} onChange={this.handleChange} className="form-control select-primary">
                   <option value="all">Todos</option>
                   <option value="stop">Terminado</option>
                   <option value="start">En progreso</option>

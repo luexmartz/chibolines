@@ -96,6 +96,8 @@ var Event = React.createClass({
              onClick={this.handleUpdate}>
             Guardar
           </a>
+        </td>
+        <td>
           <a className="btn btn-default btn-sm"
              onClick={this.handleToggle} >
             Cancelar
@@ -115,6 +117,8 @@ var Event = React.createClass({
              onClick={this.handleToggle} >
              Editar
           </a>
+        </td>
+        <td>
           <a className="btn btn-danger btn-xs"
              onClick={this.handleDelete} >
             Eliminar
