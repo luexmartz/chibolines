@@ -36,8 +36,18 @@
 .container.footer{
 	min-height: 50px;
 	margin-top: 50px;
+	padding-top: 15px;
 }
 .footer .text-muted{
 	vertical-align: middle;
-	padding-top: 25px;
+}
+
+
+.wrap.fail{
+    padding-top: 200px;
+    padding-bottom: 105px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 105px 20px;
 }

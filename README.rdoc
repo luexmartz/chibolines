@@ -1,28 +1,100 @@
-== README
+Chibolines
+===================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Comunicación entre el centro infantil y la familia centralizada en una herramienta que cautiva a padres y educadores.
 
-Things you may want to cover:
+----------
 
-* Ruby version
+### Discover Chibolines
 
-* System dependencies
+![alt text](https://pbs.twimg.com/media/C-2buOWXgAAqsGB.jpg:large)
 
-* Configuration
+Chibolines permite a los padres conocer el registro de las actividades diarias de los pequeños chibolines en el centro educativo.
 
-* Database creation
+##### Lista de Actividades
 
-* Database initialization
+![alt text](https://pbs.twimg.com/media/C-2buOPXUAEM4Tf.jpg:large)
 
-* How to run the test suite
+##### Principes y Princesas
 
-* Services (job queues, cache servers, search engines, etc.)
+![alt text](https://pbs.twimg.com/media/C-2buOZXkAEselH.jpg:large)
 
-* Deployment instructions
+##### Actividades
 
-* ...
+![alt text](https://pbs.twimg.com/media/C-2buNnXoAMbPsZ.jpg:large)
+
+### Installation
+
+Cosas que quizás quieras cubrir:
+
+Rails
+
+```
+rails 4.2.6
+```
+
+Ruby
+
+```
+ruby 2.1.5p273
+```
+
+##### System dependencies
+
+```
+mysql2 -v '0.4.5'
+```
+
+##### Configuration mysql2 (Mac)
+
+1) Install MySQL.
+[Download mysql for mac:](https://dev.mysql.com/downloads/mysql/)
+
+2) gem to your Gemfile (included)
+
+```
+gem 'mysql2', '>= 0.3.13', '< 0.5'
+```
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+3) Run bundle install from the command line.
+
+```
+bundle install
+```
+
+4) Setup your database credentials in 
+```
+confid/database.yml
+```
+<pre>
+development
+   adapter: mysql2
+   encoding: utf8
+   database: myapp_development
+   pool: 5
+   username: someuser
+   password: somepassword
+   host: localhost
+</pre>
+
+change 
+```myapp_development```, ```someuser```, ``` somepassword```, ```localhost``` for yours.
+
+##### Database creation
+
+```rake db:create```
+
+##### Database initialization
+
+```rake db:seed```
+
+##### Rails Server
+
+```rails s```
+
+##### MySQL Server
+
+```sudo /usr/local/mysql/support-files/mysql.server start```
+
+#### Enjoy!
