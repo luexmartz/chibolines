@@ -1,0 +1,6 @@
+<script type="text/javascript">
+  var babies_hash     = JSON.parse('<%=raw(@babies_hash.to_json)%>');
+  var assistants_hash = JSON.parse('<%=raw(@assistants_hash.to_json)%>');
+  var activities_hash = JSON.parse('<%=raw(@activities_hash.to_json)%>');
+</script>
+<%= react_component 'EventApplication' %>

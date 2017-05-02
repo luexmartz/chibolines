@@ -1,8 +1,8 @@
 <!-- General Styles -->
 <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" type="text/css" charset="utf-8" />
-<%= stylesheet_link_tag "application", params[:controller], media: "all", "data-turbolinks-track" => true %>
+<%= stylesheet_link_tag "application", "custom.css", params[:controller], media: "all", "data-turbolinks-track" => true %>
 
-<!-- Style and sources of each page in specific -->
+<!-- Style & fonts for each page that needs specific styles -->
 <% case @controlador%>
 	<% when "static_pages" %>
 		<% case @accion %>

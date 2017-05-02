@@ -1,3 +1,3 @@
 class Activity < ActiveRecord::Base
-	has_many :activity_logs
+	has_many :activity_logs, dependent: :nullify
 end

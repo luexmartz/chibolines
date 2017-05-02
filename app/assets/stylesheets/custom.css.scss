@@ -1,3 +1,20 @@
-.container {
-  margin-top: -20px;
+* {
+	font-family: 'Nunito', sans-serif;
+}
+.sortable {
+  cursor: pointer;
+}
+.container{
+	position: relative;
+}
+#upload-alerts{
+	position: absolute;
+	width: calc(100% - 30px);
+}
+.position_absolute{
+	position: absolute;
+	width: 83% !important;
+}
+.position_relative{
+	position: relative;
 }

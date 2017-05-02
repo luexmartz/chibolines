@@ -1,14 +1,29 @@
 Rails.application.routes.draw do
   root  'static_pages#landing_page'
 
+  match '/activities',    to: 'activities#dashboard',    via: 'get', :path => :actividades
+  match '/babies',        to: 'babies#dashboard',        via: 'get', :path => :bebes
+  match '/activity_logs', to: 'activity_logs#dashboard', via: 'get'
+
   # Api v1 definition
   namespace :api, defaults: { format: :json } do
-      resources :activities, only: [:index]
-      resources :babies, only: [:index]
-      resources :activity_logs, only: [:index, :update]
 
-      get '/babies/:id/activity_logs' => 'babies#activities'
+      resources :activities, only: [:index, :create, :update, :destroy] do
+        get :search, on: :collection
+      end
+
+      resources :babies, only: [:index, :create, :update, :destroy] do
+        get :search, on: :collection
+      end
+
+      resources :activity_logs, only: [:index, :create, :update, :destroy] do
+        get  :search, on: :collection
+      end
+
+      get  'babies/:id/activity_logs'    => 'babies#activities'
   end
+
+  match ':not_found', to: 'static_pages#404', :costrains => {:not_found => /.*/}, via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
