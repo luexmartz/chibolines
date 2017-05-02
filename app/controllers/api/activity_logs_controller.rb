@@ -25,8 +25,6 @@ module Api
 		      activity_logs = activity_logs.where(stop_time: nil) if status == "start"
 		      activity_logs = activity_logs.where.not(stop_time: nil) if status == "stop"
 
-		      #Falta filtro por Terminados
-
 			  activity_logs_hash = activity_logs_make_hash(activity_logs)
 
 			  render json: activity_logs_hash.to_json, status: :ok
@@ -50,6 +48,9 @@ module Api
 				  end
 			  else
 			  	render nothing: true, status: :bad_request
+
+			  	# Send message to view:
+			  	# render js: "createNotification('danger', 'Error en formato de fecha');", status: :bad_request
 			  end
 			rescue Exception => e
 			  render nothing: true, status: :internal_server_error

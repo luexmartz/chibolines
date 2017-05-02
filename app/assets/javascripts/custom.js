@@ -1,12 +1,8 @@
 $(document).ready(function(){
 	$('.dropdown-toggle').dropdown();
-
-  // Custom Selects
-  if ($('[data-toggle="select"]').length) {
-    $('[data-toggle="select"]').select2();
-  }
 });
 
+//create notification alert
 function createNotification(alert_type, text){
   // Get var to insert alert
   var insert_alerts_here = document.getElementById("upload-alerts");
@@ -20,6 +16,7 @@ function createNotification(alert_type, text){
   go_to_up_page();
 }
 
+//auto-scrool to top screen
 function go_to_up_page(){
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {

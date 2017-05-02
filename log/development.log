@@ -40165,3 +40165,3325 @@ Processing by Api::ActivityLogsController#index as JSON
   [1m[35mActivity Load (2.3ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
   [1m[36mActivityLog Load (9.5ms)[0m  [1mSELECT `activity_logs`.`id`, `activity_logs`.`baby_id`, `activity_logs`.`assistant_id`, `activity_logs`.`activity_id`, `activity_logs`.`start_time`, `activity_logs`.`stop_time`, `activity_logs`.`duration` FROM `activity_logs`  ORDER BY start_time desc[0m
 Completed 200 OK in 74ms (Views: 0.4ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 16:39:48 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_stylesheet.html.erb (8846.9ms)
+  Rendered layouts/_javascript.html.erb (360.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_page.html.erb (2.8ms)
+Completed 200 OK in 9251ms (Views: 9236.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assistants.self-d91913ea40001ea6d0ff7fb6a9f8c775fb757e1ddbf3f91c49dff8f47dd4d367.css?body=1" for ::1 at 2017-05-02 16:39:58 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 16:39:58 -0500
+
+
+Started GET "/assets/components/assistants/event_application.self-bca9979017fbec4d1136b776f486a16ebf4db47c77aecdd83295e1e65a5dfb0c.js?body=1" for ::1 at 2017-05-02 16:39:58 -0500
+
+
+Started GET "/assets/components/assistants/event_table.self-e2b7d4d0cccbf5633659766a29d39ec19dde136acdb8c9e0a57c1416fabdfedb.js?body=1" for ::1 at 2017-05-02 16:39:58 -0500
+
+
+Started GET "/assets/components/assistants/event.self-e42d5715fd1749ebded330a26ce6bfb523e597dcd822fb61a27cd100b9b7be5c.js?body=1" for ::1 at 2017-05-02 16:39:58 -0500
+
+
+Started GET "/assets/components/assistants/search_form.self-8f130f48866f32024f17a9efb3aaf425bc4bdf2a05acb7fbd817fe9aa51de866.js?body=1" for ::1 at 2017-05-02 16:39:58 -0500
+
+
+Started GET "/assets/assistants.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2017-05-02 16:39:58 -0500
+
+
+Started GET "/assets/components/assistants/new_form.self-72e282380fbffd962017bdfb84fe6b9bff0937f5045e1e7e706c143d32da8638.js?body=1" for ::1 at 2017-05-02 16:39:58 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 16:39:58 -0500
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 16:39:59 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[36mAssistant Load (4.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 98ms (Views: 0.6ms | ActiveRecord: 25.3ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 16:41:40 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_stylesheet.html.erb (398.5ms)
+  Rendered layouts/_javascript.html.erb (35.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_page.html.erb (1.4ms)
+Completed 200 OK in 468ms (Views: 459.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/assistants.self-d91913ea40001ea6d0ff7fb6a9f8c775fb757e1ddbf3f91c49dff8f47dd4d367.css?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/components/assistants/event_application.self-bca9979017fbec4d1136b776f486a16ebf4db47c77aecdd83295e1e65a5dfb0c.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/components/assistants/event_table.self-e2b7d4d0cccbf5633659766a29d39ec19dde136acdb8c9e0a57c1416fabdfedb.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/components/assistants/event.self-e42d5715fd1749ebded330a26ce6bfb523e597dcd822fb61a27cd100b9b7be5c.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/components/assistants/search_form.self-8f130f48866f32024f17a9efb3aaf425bc4bdf2a05acb7fbd817fe9aa51de866.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/components/assistants/new_form.self-72e282380fbffd962017bdfb84fe6b9bff0937f5045e1e7e706c143d32da8638.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/components/sort_column.self-fe269aba988f1838e1962426dced8967da3186e127045aecdc45bf7608561912.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/assistants.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 16:41:41 -0500
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 16:41:42 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[35mAssistant Load (1.7ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/assistants/search?query=I" for ::1 at 2017-05-02 16:42:09 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"I"}
+  [1m[36mAssistant Load (5.9ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%I%' OR description LIKE '%I%')[0m
+  Rendered text template (0.0ms)
+Completed 500 Internal Server Error in 24ms (Views: 14.7ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/api/assistants/search?query=Id" for ::1 at 2017-05-02 16:42:11 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Id"}
+  [1m[35mAssistant Load (1.3ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Id%' OR description LIKE '%Id%')
+  Rendered text template (0.0ms)
+Completed 500 Internal Server Error in 4ms (Views: 0.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/assistants/search?query=Ido" for ::1 at 2017-05-02 16:42:12 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Ido"}
+  [1m[36mAssistant Load (1.8ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Ido%' OR description LIKE '%Ido%')[0m
+  Rendered text template (0.0ms)
+Completed 500 Internal Server Error in 5ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/assistants/search?query=Idon" for ::1 at 2017-05-02 16:42:12 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Idon"}
+  [1m[35mAssistant Load (1.7ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Idon%' OR description LIKE '%Idon%')
+  Rendered text template (0.0ms)
+Completed 500 Internal Server Error in 5ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 16:42:34 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_stylesheet.html.erb (37.1ms)
+  Rendered layouts/_javascript.html.erb (77.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+  Rendered layouts/_page.html.erb (3.5ms)
+Completed 200 OK in 135ms (Views: 133.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 16:42:36 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[36mAssistant Load (1.0ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 16:42:40 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_stylesheet.html.erb (54.9ms)
+  Rendered layouts/_javascript.html.erb (87.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+  Rendered layouts/_page.html.erb (4.1ms)
+Completed 200 OK in 167ms (Views: 165.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 16:42:42 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[35mActivity Load (7.6ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc
+Completed 200 OK in 74ms (Views: 0.4ms | ActiveRecord: 27.9ms)
+
+
+Started GET "/api/activities/search?query=a" for ::1 at 2017-05-02 16:42:44 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"a"}
+  [1m[36mActivity Load (0.5ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%a%' OR description LIKE '%a%')[0m
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/activities/search?query=as" for ::1 at 2017-05-02 16:42:45 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"as"}
+  [1m[35mActivity Load (0.6ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%as%' OR description LIKE '%as%')
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/activities/search?query=ass" for ::1 at 2017-05-02 16:42:46 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"ass"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%ass%' OR description LIKE '%ass%')[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities/search?query=as" for ::1 at 2017-05-02 16:42:47 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"as"}
+  [1m[35mActivity Load (0.5ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%as%' OR description LIKE '%as%')
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/activities/search?query=asi" for ::1 at 2017-05-02 16:42:47 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"asi"}
+  [1m[36mActivity Load (0.6ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%asi%' OR description LIKE '%asi%')[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/activities/search?query=as" for ::1 at 2017-05-02 16:42:48 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"as"}
+  [1m[35mActivity Load (2.0ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%as%' OR description LIKE '%as%')
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/activities/search?query=ase" for ::1 at 2017-05-02 16:42:50 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"ase"}
+  [1m[36mActivity Load (0.8ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%ase%' OR description LIKE '%ase%')[0m
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/activities/search?query=as" for ::1 at 2017-05-02 16:42:53 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"as"}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%as%' OR description LIKE '%as%')
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities/search?query=a" for ::1 at 2017-05-02 16:42:54 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"a"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%a%' OR description LIKE '%a%')[0m
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities/search?query=" for ::1 at 2017-05-02 16:42:54 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%%' OR description LIKE '%%')
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities?sort_by=name&order=desc" for ::1 at 2017-05-02 16:42:56 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[36mActivity Load (1.3ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name desc[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/activities?sort_by=name&order=asc" for ::1 at 2017-05-02 16:42:57 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"asc"}
+  [1m[35mActivity Load (0.8ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/activities?sort_by=description&order=asc" for ::1 at 2017-05-02 16:42:58 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"description", "order"=>"asc"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY description asc[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities?sort_by=description&order=desc" for ::1 at 2017-05-02 16:42:58 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"description", "order"=>"desc"}
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY description desc
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/activities" for ::1 at 2017-05-02 16:43:03 -0500
+Processing by Api::ActivitiesController#create as JSON
+  Parameters: {"activity"=>{"name"=>"Nuevo", "description"=>"Mas"}}
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (8.2ms)[0m  INSERT INTO `activities` (`name`, `description`, `created_at`, `updated_at`) VALUES ('Nuevo', 'Mas', '2017-05-02 21:43:03', '2017-05-02 21:43:03')
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 24ms (Views: 0.7ms | ActiveRecord: 12.2ms)
+
+
+Started PUT "/api/activities/17" for ::1 at 2017-05-02 16:43:18 -0500
+Processing by Api::ActivitiesController#update as JSON
+  Parameters: {"activity"=>{"name"=>"Nuevoss", "description"=>"Massonemos"}, "id"=>"17"}
+  [1m[35m (4.7ms)[0m  SELECT COUNT(*) FROM `activities` WHERE `activities`.`id` = 17
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE `activities`.`id` = 17[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (11.6ms)[0m  [1mUPDATE `activities` SET `name` = 'Nuevoss', `description` = 'Massonemos', `updated_at` = '2017-05-02 21:43:18' WHERE `activities`.`id` = 17[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+Completed 200 OK in 36ms (Views: 0.7ms | ActiveRecord: 17.8ms)
+
+
+Started DELETE "/api/activities/17" for ::1 at 2017-05-02 16:43:22 -0500
+Processing by Api::ActivitiesController#destroy as JSON
+  Parameters: {"id"=>"17"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `activities` WHERE `activities`.`id` = 17[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT `activities`.* FROM `activities` WHERE `activities`.`id` = 17
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.4ms)[0m  UPDATE `activity_logs` SET `activity_logs`.`activity_id` = NULL WHERE `activity_logs`.`activity_id` = 17
+  [1m[36mSQL (2.4ms)[0m  [1mDELETE FROM `activities` WHERE `activities`.`id` = 17[0m
+  [1m[35m (1.5ms)[0m  COMMIT
+Completed 204 No Content in 76ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/api/assistants/search?query=Idona" for ::1 at 2017-05-02 16:45:01 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Idona"}
+  Rendered text template (0.1ms)
+Completed 500 Internal Server Error in 25ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/assistants/search?query=Idona+" for ::1 at 2017-05-02 16:45:41 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Idona "}
+  [1m[36mAssistant Load (5.7ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Idona %' OR group LIKE '%Idona %' OR address LIKE '%Idona %' OR phone LIKE '%Idona %')[0m
+  Rendered text template (0.0ms)
+Completed 500 Internal Server Error in 22ms (Views: 3.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/api/assistants/search?query=Idona" for ::1 at 2017-05-02 16:47:17 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Idona"}
+  [1m[35mAssistant Load (2.5ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Idona%' OR group LIKE '%Idona%' OR address LIKE '%Idona%' OR phone LIKE '%Idona%')
+  Rendered text template (0.1ms)
+Completed 500 Internal Server Error in 29ms (Views: 3.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/assistants/search?query=Idonaa" for ::1 at 2017-05-02 16:47:47 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Idonaa"}
+  [1m[36mAssistant Load (1.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Idonaa%' OR address LIKE '%Idonaa%' OR phone LIKE '%Idonaa%')[0m
+Completed 200 OK in 22ms (Views: 4.0ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/api/assistants/search?query=Idona" for ::1 at 2017-05-02 16:47:49 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Idona"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Idona%' OR address LIKE '%Idona%' OR phone LIKE '%Idona%')
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/assistants/search?query=Idona+" for ::1 at 2017-05-02 16:47:49 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Idona "}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Idona %' OR address LIKE '%Idona %' OR phone LIKE '%Idona %')[0m
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=Idona" for ::1 at 2017-05-02 16:47:50 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Idona"}
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Idona%' OR address LIKE '%Idona%' OR phone LIKE '%Idona%')
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants/search?query=Idon" for ::1 at 2017-05-02 16:47:52 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Idon"}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Idon%' OR address LIKE '%Idon%' OR phone LIKE '%Idon%')[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=Ido" for ::1 at 2017-05-02 16:47:52 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Ido"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Ido%' OR address LIKE '%Ido%' OR phone LIKE '%Ido%')
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=Id" for ::1 at 2017-05-02 16:47:53 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Id"}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Id%' OR address LIKE '%Id%' OR phone LIKE '%Id%')[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=I" for ::1 at 2017-05-02 16:47:53 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"I"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%I%' OR address LIKE '%I%' OR phone LIKE '%I%')
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=" for ::1 at 2017-05-02 16:47:54 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%%' OR address LIKE '%%' OR phone LIKE '%%')[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants/search?query=B" for ::1 at 2017-05-02 16:47:55 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"B"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%B%' OR address LIKE '%B%' OR phone LIKE '%B%')
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=Ba" for ::1 at 2017-05-02 16:47:56 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Ba"}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Ba%' OR address LIKE '%Ba%' OR phone LIKE '%Ba%')[0m
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=Bas" for ::1 at 2017-05-02 16:47:58 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Bas"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Bas%' OR address LIKE '%Bas%' OR phone LIKE '%Bas%')
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=Ba" for ::1 at 2017-05-02 16:47:59 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Ba"}
+  [1m[36mAssistant Load (0.6ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Ba%' OR address LIKE '%Ba%' OR phone LIKE '%Ba%')[0m
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/assistants/search?query=B" for ::1 at 2017-05-02 16:47:59 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"B"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%B%' OR address LIKE '%B%' OR phone LIKE '%B%')
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=" for ::1 at 2017-05-02 16:47:59 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%%' OR address LIKE '%%' OR phone LIKE '%%')[0m
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=1" for ::1 at 2017-05-02 16:48:32 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"1"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%1%' OR address LIKE '%1%' OR phone LIKE '%1%')
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=12" for ::1 at 2017-05-02 16:48:33 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"12"}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%12%' OR address LIKE '%12%' OR phone LIKE '%12%')[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=1" for ::1 at 2017-05-02 16:48:36 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"1"}
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%1%' OR address LIKE '%1%' OR phone LIKE '%1%')
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants/search?query=" for ::1 at 2017-05-02 16:48:37 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%%' OR address LIKE '%%' OR phone LIKE '%%')[0m
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/assistants" for ::1 at 2017-05-02 16:52:09 -0500
+Processing by Api::AssistantsController#create as JSON
+  Parameters: {"assistant"=>{"name"=>"Nueva cuidadora", "group"=>"2", "address"=>"la que sea", "phone"=>"cualquiera"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO `assistants` (`name`, `group`, `address`, `phone`, `created_at`, `updated_at`) VALUES ('Nueva cuidadora', '2', 'la que sea', 'cualquiera', '2017-05-02 21:52:09', '2017-05-02 21:52:09')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Completed 201 Created in 50ms (Views: 0.7ms | ActiveRecord: 8.4ms)
+
+
+Started PUT "/api/assistants/11" for ::1 at 2017-05-02 16:53:02 -0500
+Processing by Api::AssistantsController#update as JSON
+  Parameters: {"assistant"=>{"name"=>"Nueva cuidadora22", "group"=>"33", "address"=>"wherever", "phone"=>"cualquierasa"}, "id"=>"11"}
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `assistants` WHERE `assistants`.`id` = 11[0m
+  [1m[35mAssistant Load (0.2ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE `assistants`.`id` = 11
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  UPDATE `assistants` SET `name` = 'Nueva cuidadora22', `group` = '33', `address` = 'wherever', `phone` = 'cualquierasa', `updated_at` = '2017-05-02 21:53:02' WHERE `assistants`.`id` = 11
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 22ms (Views: 1.1ms | ActiveRecord: 4.1ms)
+
+
+Started DELETE "/api/assistants/11" for ::1 at 2017-05-02 16:53:09 -0500
+Processing by Api::AssistantsController#destroy as JSON
+  Parameters: {"id"=>"11"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `assistants` WHERE `assistants`.`id` = 11
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE `assistants`.`id` = 11[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE `activity_logs` SET `activity_logs`.`assistant_id` = NULL WHERE `activity_logs`.`assistant_id` = 11[0m
+  [1m[35mSQL (2.5ms)[0m  DELETE FROM `assistants` WHERE `assistants`.`id` = 11
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 34ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/api/assistants/search?query=N" for ::1 at 2017-05-02 16:53:24 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"N"}
+  [1m[35mAssistant Load (0.5ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%N%' OR address LIKE '%N%' OR phone LIKE '%N%')
+Completed 200 OK in 51ms (Views: 5.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/assistants/search?query=Ne" for ::1 at 2017-05-02 16:53:25 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Ne"}
+  [1m[36mAssistant Load (0.8ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Ne%' OR address LIKE '%Ne%' OR phone LIKE '%Ne%')[0m
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/assistants/search?query=Neu" for ::1 at 2017-05-02 16:53:25 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Neu"}
+  [1m[35mAssistant Load (2.2ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Neu%' OR address LIKE '%Neu%' OR phone LIKE '%Neu%')
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/assistants/search?query=Neuv" for ::1 at 2017-05-02 16:53:25 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Neuv"}
+  [1m[36mAssistant Load (0.6ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Neuv%' OR address LIKE '%Neuv%' OR phone LIKE '%Neuv%')[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/assistants/search?query=Neuva" for ::1 at 2017-05-02 16:53:25 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Neuva"}
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Neuva%' OR address LIKE '%Neuva%' OR phone LIKE '%Neuva%')
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants/search?query=Neuv" for ::1 at 2017-05-02 16:53:26 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Neuv"}
+  [1m[36mAssistant Load (0.6ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Neuv%' OR address LIKE '%Neuv%' OR phone LIKE '%Neuv%')[0m
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/assistants/search?query=Neu" for ::1 at 2017-05-02 16:53:26 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Neu"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Neu%' OR address LIKE '%Neu%' OR phone LIKE '%Neu%')
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=Ne" for ::1 at 2017-05-02 16:53:26 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"Ne"}
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%Ne%' OR address LIKE '%Ne%' OR phone LIKE '%Ne%')[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants/search?query=N" for ::1 at 2017-05-02 16:53:26 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"N"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%N%' OR address LIKE '%N%' OR phone LIKE '%N%')
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=" for ::1 at 2017-05-02 16:53:27 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%%' OR address LIKE '%%' OR phone LIKE '%%')[0m
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/assistants" for ::1 at 2017-05-02 16:53:44 -0500
+Processing by Api::AssistantsController#create as JSON
+  Parameters: {"assistant"=>{"name"=>"Nueva cuidadora mundial", "group"=>"1212", "address"=>"Ninguna", "phone"=>"Ninguno"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO `assistants` (`name`, `group`, `address`, `phone`, `created_at`, `updated_at`) VALUES ('Nueva cuidadora mundial', '1212', 'Ninguna', 'Ninguno', '2017-05-02 21:53:44', '2017-05-02 21:53:44')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Completed 201 Created in 7ms (Views: 0.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/activity_logs" for ::1 at 2017-05-02 16:53:47 -0500
+Processing by ActivityLogsController#dashboard as HTML
+  [1m[36mBaby Load (5.1ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name` FROM `babies`[0m
+  [1m[35mAssistant Load (0.7ms)[0m  SELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name` FROM `activities`[0m
+  Rendered activity_logs/dashboard.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_stylesheet.html.erb (102.2ms)
+  Rendered layouts/_javascript.html.erb (138.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+  Rendered layouts/_page.html.erb (3.2ms)
+Completed 200 OK in 344ms (Views: 278.0ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/assets/activity_logs.self-82d7cbba698ee835061a3f2a103805c2b6ec5becf403c89f1d5c9c3d81081d19.js?body=1" for ::1 at 2017-05-02 16:53:47 -0500
+
+
+Started GET "/api/activity_logs" for ::1 at 2017-05-02 16:53:49 -0500
+Processing by Api::ActivityLogsController#index as JSON
+  [1m[35mBaby Load (0.5ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.7ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.5ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36mActivityLog Load (1.9ms)[0m  [1mSELECT `activity_logs`.`id`, `activity_logs`.`baby_id`, `activity_logs`.`assistant_id`, `activity_logs`.`activity_id`, `activity_logs`.`start_time`, `activity_logs`.`stop_time`, `activity_logs`.`duration` FROM `activity_logs`  ORDER BY start_time desc[0m
+Completed 200 OK in 81ms (Views: 0.3ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/api/activity_logs" for ::1 at 2017-05-02 16:54:08 -0500
+Processing by Api::ActivityLogsController#create as JSON
+  Parameters: {"activity_log"=>{"baby_id"=>"8", "assistant_id"=>"12", "activity_id"=>"3", "start_time"=>"2017/05/02 16:54:00"}}
+  [1m[35mBaby Load (0.6ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.5ms)[0m  INSERT INTO `activity_logs` (`baby_id`, `assistant_id`, `activity_id`, `start_time`, `created_at`, `updated_at`) VALUES (8, 12, 3, '2017-05-02 16:54:00', '2017-05-02 21:54:08', '2017-05-02 21:54:08')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActivityLog Load (0.3ms)[0m  SELECT `activity_logs`.* FROM `activity_logs` WHERE `activity_logs`.`id` = 161
+Completed 201 Created in 21ms (Views: 0.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/activity_logs" for ::1 at 2017-05-02 16:54:12 -0500
+Processing by ActivityLogsController#dashboard as HTML
+  [1m[36mBaby Load (1.4ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name` FROM `babies`[0m
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name` FROM `activities`[0m
+  Rendered activity_logs/dashboard.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_stylesheet.html.erb (53.6ms)
+  Rendered layouts/_javascript.html.erb (80.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+  Rendered layouts/_page.html.erb (2.8ms)
+Completed 200 OK in 170ms (Views: 158.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/bootstrap-datetimepicker.self-9335a464797c89676ed4b683a42a79838ce3ed5309aebe28771b2b0a96d1a072.css?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/activity_logs.self-3afaab9b30d7ced1287b89b3c811bdd5df225185aadfac69d243d9a7f866faf4.css?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/components/activity_logs/event_application.self-f3823cbe82c4b0648fbfb71b55b410a3ea205da337bb329fe799284a693fdaf7.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/components/activity_logs/event_table.self-c38786af86196fa0f5a7a0c959b675f08ddc130e9110a3655f4ee78405cb4f30.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/components/activity_logs/event.self-fe3a35b3db23cc88ee3dd8534c799d0a54345be5352b7b7ed794bdb0724eae80.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/components/activity_logs/search_form.self-41196231f154cc7abf43e19bf468d14141f382b90fddc0dddbed8e9127d6f9a5.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/components/activity_logs/new_form.self-fe5b7b88190aa18e83fc7294ad22359b08a3e8cdcde58f937581bc0207af6b45.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/moment.min.self-969ff4b784b8e57b40841eaf13a6cdcdb7992466d1595393a80f4b193c78a466.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/bootstrap-datetimepicker.self-9bf8b50ba86095fb5caaadd1ee11eaf661b3f4879f3ea5263d541e9804fd7b15.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/activity_logs.self-82d7cbba698ee835061a3f2a103805c2b6ec5becf403c89f1d5c9c3d81081d19.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 16:54:12 -0500
+
+
+Started GET "/api/activity_logs" for ::1 at 2017-05-02 16:54:13 -0500
+Processing by Api::ActivityLogsController#index as JSON
+  [1m[35mBaby Load (0.4ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36mActivityLog Load (1.6ms)[0m  [1mSELECT `activity_logs`.`id`, `activity_logs`.`baby_id`, `activity_logs`.`assistant_id`, `activity_logs`.`activity_id`, `activity_logs`.`start_time`, `activity_logs`.`stop_time`, `activity_logs`.`duration` FROM `activity_logs`  ORDER BY start_time desc[0m
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 2.7ms)
+
+
+Started DELETE "/api/activities/3" for ::1 at 2017-05-02 16:54:41 -0500
+Processing by Api::ActivitiesController#destroy as JSON
+  Parameters: {"id"=>"3"}
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `activities` WHERE `activities`.`id` = 3
+  [1m[36mActivity Load (0.6ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE `activities`.`id` = 3[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (12.0ms)[0m  [1mUPDATE `activity_logs` SET `activity_logs`.`activity_id` = NULL WHERE `activity_logs`.`activity_id` = 3[0m
+  [1m[35mSQL (1.4ms)[0m  DELETE FROM `activities` WHERE `activities`.`id` = 3
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 30ms (ActiveRecord: 15.5ms)
+
+
+Started GET "/activity_logs" for ::1 at 2017-05-02 16:54:49 -0500
+Processing by ActivityLogsController#dashboard as HTML
+  [1m[35mBaby Load (0.5ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.4ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  Rendered activity_logs/dashboard.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_stylesheet.html.erb (32.3ms)
+  Rendered layouts/_javascript.html.erb (58.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_page.html.erb (1.6ms)
+Completed 200 OK in 117ms (Views: 107.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/bootstrap-datetimepicker.self-9335a464797c89676ed4b683a42a79838ce3ed5309aebe28771b2b0a96d1a072.css?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/activity_logs.self-3afaab9b30d7ced1287b89b3c811bdd5df225185aadfac69d243d9a7f866faf4.css?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/components/activity_logs/event_application.self-f3823cbe82c4b0648fbfb71b55b410a3ea205da337bb329fe799284a693fdaf7.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/components/activity_logs/event_table.self-c38786af86196fa0f5a7a0c959b675f08ddc130e9110a3655f4ee78405cb4f30.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/components/activity_logs/event.self-fe3a35b3db23cc88ee3dd8534c799d0a54345be5352b7b7ed794bdb0724eae80.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/components/activity_logs/search_form.self-41196231f154cc7abf43e19bf468d14141f382b90fddc0dddbed8e9127d6f9a5.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/components/activity_logs/new_form.self-fe5b7b88190aa18e83fc7294ad22359b08a3e8cdcde58f937581bc0207af6b45.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/moment.min.self-969ff4b784b8e57b40841eaf13a6cdcdb7992466d1595393a80f4b193c78a466.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/bootstrap-datetimepicker.self-9bf8b50ba86095fb5caaadd1ee11eaf661b3f4879f3ea5263d541e9804fd7b15.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/activity_logs.self-82d7cbba698ee835061a3f2a103805c2b6ec5becf403c89f1d5c9c3d81081d19.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 16:54:49 -0500
+
+
+Started GET "/api/activity_logs" for ::1 at 2017-05-02 16:54:50 -0500
+Processing by Api::ActivityLogsController#index as JSON
+  [1m[36mBaby Load (0.5ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name` FROM `babies`[0m
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`
+  [1m[36mActivity Load (0.5ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name` FROM `activities`[0m
+  [1m[35mActivityLog Load (1.1ms)[0m  SELECT `activity_logs`.`id`, `activity_logs`.`baby_id`, `activity_logs`.`assistant_id`, `activity_logs`.`activity_id`, `activity_logs`.`start_time`, `activity_logs`.`stop_time`, `activity_logs`.`duration` FROM `activity_logs`  ORDER BY start_time desc
+Completed 200 OK in 36ms (Views: 0.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 16:55:02 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_stylesheet.html.erb (26.5ms)
+  Rendered layouts/_javascript.html.erb (48.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_page.html.erb (1.9ms)
+Completed 200 OK in 224ms (Views: 222.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 16:55:03 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/api/assistants/12" for ::1 at 2017-05-02 16:55:07 -0500
+Processing by Api::AssistantsController#destroy as JSON
+  Parameters: {"id"=>"12"}
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM `assistants` WHERE `assistants`.`id` = 12
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE `assistants`.`id` = 12[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.8ms)[0m  [1mUPDATE `activity_logs` SET `activity_logs`.`assistant_id` = NULL WHERE `activity_logs`.`assistant_id` = 12[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `assistants` WHERE `assistants`.`id` = 12
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 11ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/activity_logs" for ::1 at 2017-05-02 16:55:09 -0500
+Processing by ActivityLogsController#dashboard as HTML
+  [1m[35mBaby Load (0.5ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.2ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  Rendered activity_logs/dashboard.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_stylesheet.html.erb (23.1ms)
+  Rendered layouts/_javascript.html.erb (58.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_page.html.erb (1.8ms)
+Completed 200 OK in 103ms (Views: 95.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap-datetimepicker.self-9335a464797c89676ed4b683a42a79838ce3ed5309aebe28771b2b0a96d1a072.css?body=1" for ::1 at 2017-05-02 16:55:09 -0500
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 16:55:09 -0500
+
+
+Started GET "/assets/activity_logs.self-3afaab9b30d7ced1287b89b3c811bdd5df225185aadfac69d243d9a7f866faf4.css?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/components/activity_logs/event_application.self-f3823cbe82c4b0648fbfb71b55b410a3ea205da337bb329fe799284a693fdaf7.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/components/activity_logs/event_table.self-c38786af86196fa0f5a7a0c959b675f08ddc130e9110a3655f4ee78405cb4f30.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/components/activity_logs/event.self-fe3a35b3db23cc88ee3dd8534c799d0a54345be5352b7b7ed794bdb0724eae80.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/components/activity_logs/search_form.self-41196231f154cc7abf43e19bf468d14141f382b90fddc0dddbed8e9127d6f9a5.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/components/activity_logs/new_form.self-fe5b7b88190aa18e83fc7294ad22359b08a3e8cdcde58f937581bc0207af6b45.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/moment.min.self-969ff4b784b8e57b40841eaf13a6cdcdb7992466d1595393a80f4b193c78a466.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/bootstrap-datetimepicker.self-9bf8b50ba86095fb5caaadd1ee11eaf661b3f4879f3ea5263d541e9804fd7b15.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/activity_logs.self-82d7cbba698ee835061a3f2a103805c2b6ec5becf403c89f1d5c9c3d81081d19.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 16:55:10 -0500
+
+
+Started GET "/api/activity_logs" for ::1 at 2017-05-02 16:55:11 -0500
+Processing by Api::ActivityLogsController#index as JSON
+  [1m[36mBaby Load (0.8ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name` FROM `babies`[0m
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name` FROM `activities`[0m
+  [1m[35mActivityLog Load (0.6ms)[0m  SELECT `activity_logs`.`id`, `activity_logs`.`baby_id`, `activity_logs`.`assistant_id`, `activity_logs`.`activity_id`, `activity_logs`.`start_time`, `activity_logs`.`stop_time`, `activity_logs`.`duration` FROM `activity_logs`  ORDER BY start_time desc
+Completed 200 OK in 47ms (Views: 0.2ms | ActiveRecord: 2.0ms)
+
+
+Started PUT "/api/activity_logs/161" for ::1 at 2017-05-02 16:55:20 -0500
+Processing by Api::ActivityLogsController#update as JSON
+  Parameters: {"activity_log"=>{"comments"=>"ninguno"}, "id"=>"161"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `activity_logs` WHERE `activity_logs`.`id` = 161[0m
+  [1m[35mActivityLog Load (0.3ms)[0m  SELECT `activity_logs`.* FROM `activity_logs` WHERE `activity_logs`.`id` = 161
+  [1m[36mBaby Load (0.5ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name` FROM `babies`[0m
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name` FROM `activities`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.8ms)[0m  [1mUPDATE `activity_logs` SET `duration` = 301, `stop_time` = '2017-05-02 21:55:21', `comments` = 'ninguno', `updated_at` = '2017-05-02 21:55:21' WHERE `activity_logs`.`id` = 161[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mActivityLog Load (0.5ms)[0m  [1mSELECT `activity_logs`.* FROM `activity_logs` WHERE `activity_logs`.`id` = 161[0m
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 4.8ms)
+
+
+Started DELETE "/api/activity_logs/161" for ::1 at 2017-05-02 16:55:41 -0500
+Processing by Api::ActivityLogsController#destroy as JSON
+  Parameters: {"id"=>"161"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `activity_logs` WHERE `activity_logs`.`id` = 161
+  [1m[36mActivityLog Load (0.4ms)[0m  [1mSELECT `activity_logs`.* FROM `activity_logs` WHERE `activity_logs`.`id` = 161[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `activity_logs` WHERE `activity_logs`.`id` = 161[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 5ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 16:56:46 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheet.html.erb (54.0ms)
+  Rendered layouts/_javascript.html.erb (1517.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_page.html.erb (2.5ms)
+Completed 200 OK in 1600ms (Views: 1595.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/assistants.self-d91913ea40001ea6d0ff7fb6a9f8c775fb757e1ddbf3f91c49dff8f47dd4d367.css?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/components/assistants/event_application.self-40cfd0960a91d872bf099c29c38d830ff1f14fc321c59f5c0e2512a50c7b8574.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/components/assistants/event_table.self-e2b7d4d0cccbf5633659766a29d39ec19dde136acdb8c9e0a57c1416fabdfedb.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/components/assistants/event.self-e42d5715fd1749ebded330a26ce6bfb523e597dcd822fb61a27cd100b9b7be5c.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/components/assistants/search_form.self-8f130f48866f32024f17a9efb3aaf425bc4bdf2a05acb7fbd817fe9aa51de866.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/components/assistants/new_form.self-72e282380fbffd962017bdfb84fe6b9bff0937f5045e1e7e706c143d32da8638.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/components/sort_column.self-fe269aba988f1838e1962426dced8967da3186e127045aecdc45bf7608561912.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/assistants.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 16:56:48 -0500
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 16:56:49 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[36mAssistant Load (1.9ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 29ms (Views: 0.4ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 16:57:39 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_stylesheet.html.erb (18.2ms)
+  Rendered layouts/_javascript.html.erb (47.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (4.7ms)
+  Rendered layouts/_page.html.erb (6.1ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/assistants.self-d91913ea40001ea6d0ff7fb6a9f8c775fb757e1ddbf3f91c49dff8f47dd4d367.css?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/components/assistants/event_application.self-40cfd0960a91d872bf099c29c38d830ff1f14fc321c59f5c0e2512a50c7b8574.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/components/assistants/event_table.self-e2b7d4d0cccbf5633659766a29d39ec19dde136acdb8c9e0a57c1416fabdfedb.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/components/assistants/event.self-e42d5715fd1749ebded330a26ce6bfb523e597dcd822fb61a27cd100b9b7be5c.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/components/assistants/search_form.self-8f130f48866f32024f17a9efb3aaf425bc4bdf2a05acb7fbd817fe9aa51de866.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/components/assistants/new_form.self-72e282380fbffd962017bdfb84fe6b9bff0937f5045e1e7e706c143d32da8638.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/components/sort_column.self-fe269aba988f1838e1962426dced8967da3186e127045aecdc45bf7608561912.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/assistants.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 16:57:39 -0500
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 16:57:40 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[35mAssistant Load (0.5ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 16:57:42 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_stylesheet.html.erb (17.0ms)
+  Rendered layouts/_javascript.html.erb (34.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_page.html.erb (1.7ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 16:57:43 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[36mAssistant Load (0.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 16:57:44 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_stylesheet.html.erb (20.3ms)
+  Rendered layouts/_javascript.html.erb (48.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_page.html.erb (1.8ms)
+Completed 200 OK in 87ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 16:57:45 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[35mActivity Load (0.7ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc
+Completed 200 OK in 126ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 16:57:46 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_stylesheet.html.erb (16.3ms)
+  Rendered layouts/_javascript.html.erb (51.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+  Rendered layouts/_page.html.erb (2.9ms)
+Completed 200 OK in 83ms (Views: 81.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 16:57:47 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[36mAssistant Load (0.6ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/bebes" for ::1 at 2017-05-02 16:57:48 -0500
+Processing by BabiesController#dashboard as HTML
+  Rendered babies/dashboard.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheet.html.erb (71.9ms)
+  Rendered layouts/_javascript.html.erb (134.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_page.html.erb (2.1ms)
+Completed 200 OK in 231ms (Views: 229.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/babies" for ::1 at 2017-05-02 16:57:50 -0500
+Processing by Api::BabiesController#index as JSON
+  [1m[35mBaby Load (0.9ms)[0m  SELECT `babies`.`id`, `babies`.`name`, `babies`.`birthday`, `babies`.`mother_name`, `babies`.`father_name`, `babies`.`address`, `babies`.`phone` FROM `babies`  ORDER BY name asc
+Completed 200 OK in 55ms (Views: 0.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/activity_logs" for ::1 at 2017-05-02 16:57:51 -0500
+Processing by ActivityLogsController#dashboard as HTML
+  [1m[36mBaby Load (0.5ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name` FROM `babies`[0m
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name` FROM `activities`[0m
+  Rendered activity_logs/dashboard.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_stylesheet.html.erb (34.3ms)
+  Rendered layouts/_javascript.html.erb (58.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_page.html.erb (1.4ms)
+Completed 200 OK in 118ms (Views: 109.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/activity_logs" for ::1 at 2017-05-02 16:57:53 -0500
+Processing by Api::ActivityLogsController#index as JSON
+  [1m[35mBaby Load (0.6ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36mActivityLog Load (1.6ms)[0m  [1mSELECT `activity_logs`.`id`, `activity_logs`.`baby_id`, `activity_logs`.`assistant_id`, `activity_logs`.`activity_id`, `activity_logs`.`start_time`, `activity_logs`.`stop_time`, `activity_logs`.`duration` FROM `activity_logs`  ORDER BY start_time desc[0m
+Completed 200 OK in 78ms (Views: 0.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-02 16:58:03 -0500
+Processing by StaticPagesController#landing_page as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `babies`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `activities`[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `activity_logs`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `assistants`[0m
+  Rendered static_pages/landing_page.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_stylesheet.html.erb (25.2ms)
+  Rendered layouts/_javascript.html.erb (29.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_page.html.erb (0.1ms)
+Completed 200 OK in 78ms (Views: 72.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/login" for ::1 at 2017-05-02 16:58:33 -0500
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheet.html.erb (19.1ms)
+  Rendered layouts/_javascript.html.erb (23.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_page.html.erb (0.2ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/activity_logs" for ::1 at 2017-05-02 16:58:35 -0500
+Processing by ActivityLogsController#dashboard as HTML
+  [1m[35mBaby Load (0.5ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  Rendered activity_logs/dashboard.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_stylesheet.html.erb (35.0ms)
+  Rendered layouts/_javascript.html.erb (68.8ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_page.html.erb (2.8ms)
+Completed 200 OK in 138ms (Views: 129.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/activity_logs" for ::1 at 2017-05-02 16:58:36 -0500
+Processing by Api::ActivityLogsController#index as JSON
+  [1m[36mBaby Load (0.5ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name` FROM `babies`[0m
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name` FROM `activities`[0m
+  [1m[35mActivityLog Load (0.8ms)[0m  SELECT `activity_logs`.`id`, `activity_logs`.`baby_id`, `activity_logs`.`assistant_id`, `activity_logs`.`activity_id`, `activity_logs`.`start_time`, `activity_logs`.`stop_time`, `activity_logs`.`duration` FROM `activity_logs`  ORDER BY start_time desc
+Completed 200 OK in 41ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 16:59:05 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_stylesheet.html.erb (21.5ms)
+  Rendered layouts/_javascript.html.erb (54.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_page.html.erb (1.8ms)
+Completed 200 OK in 91ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 16:59:06 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[36mActivity Load (0.7ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:08:37 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_stylesheet.html.erb (24.0ms)
+  Rendered layouts/_javascript.html.erb (1370.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (2.2ms)
+  Rendered layouts/_page.html.erb (3.2ms)
+Completed 200 OK in 1417ms (Views: 1412.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/activities.self-40cc7af984836ec201eec0b9c2af8171322e75e931bc2607a2587902cf8d7d97.css?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/components/activities/event_application.self-648dc6b763139cfc7b524791ccc52d4fd27148e49e764983b4a4c8888b3f2a1a.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/components/activities/event_table.self-3be0eff02a1acab1fbffbab22b789f092801ce39845e00ba1d1524e7b4b18e3c.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/components/activities/event.self-38b4a74b1fb4d70c313ca237f988225ef319ee09a9d21c483116b32080bf1014.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/components/activities/search_form.self-62724fa0e67e87edea615060538b04b1649362367bb40456ce1cf474d8db3765.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/components/activities/new_form.self-eeacf05e4393e37c9cb0702d60d123a5546a280d15551b38e41b29a5ab0b6335.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/components/sort_column.self-fe269aba988f1838e1962426dced8967da3186e127045aecdc45bf7608561912.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/activities.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 17:08:39 -0500
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:08:40 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[35mActivity Load (2.4ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc
+Completed 200 OK in 54ms (Views: 0.5ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:09:10 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheet.html.erb (25.2ms)
+  Rendered layouts/_javascript.html.erb (1224.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered layouts/_page.html.erb (3.1ms)
+Completed 200 OK in 1277ms (Views: 1274.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/components/activities/new_form.self-1adecb92c60b09861e432ebb7f64a97f33eae00dc477d8af36b9696032461e6f.js?body=1" for ::1 at 2017-05-02 17:09:12 -0500
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:09:13 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[36mActivity Load (2.5ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc[0m
+Completed 200 OK in 45ms (Views: 0.3ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:09:47 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_stylesheet.html.erb (188.6ms)
+  Rendered layouts/_javascript.html.erb (102.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (5.9ms)
+  Rendered layouts/_page.html.erb (7.5ms)
+Completed 200 OK in 352ms (Views: 327.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:09:49 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[35mActivity Load (1.5ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:11:32 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_stylesheet.html.erb (151.5ms)
+  Rendered layouts/_javascript.html.erb (1563.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_page.html.erb (2.8ms)
+Completed 200 OK in 1745ms (Views: 1742.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/activities.self-c3f3f1b893b5b4385e739354dc3769fe958fc028aaf548b97db84939064a1ff4.css?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/components/activities/event_application.self-648dc6b763139cfc7b524791ccc52d4fd27148e49e764983b4a4c8888b3f2a1a.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/components/activities/event_table.self-3be0eff02a1acab1fbffbab22b789f092801ce39845e00ba1d1524e7b4b18e3c.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/components/activities/event.self-38b4a74b1fb4d70c313ca237f988225ef319ee09a9d21c483116b32080bf1014.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/components/activities/search_form.self-62724fa0e67e87edea615060538b04b1649362367bb40456ce1cf474d8db3765.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/components/activities/new_form.self-a530da925716642858554edfe68d77b10e4c9f6c22a91fa9da01fe43338aa617.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/components/sort_column.self-fe269aba988f1838e1962426dced8967da3186e127045aecdc45bf7608561912.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/activities.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 17:11:35 -0500
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:11:36 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[36mActivity Load (0.9ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc[0m
+Completed 200 OK in 44ms (Views: 0.4ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:11:49 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheet.html.erb (76.8ms)
+  Rendered layouts/_javascript.html.erb (87.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (4.3ms)
+  Rendered layouts/_page.html.erb (5.6ms)
+Completed 200 OK in 191ms (Views: 190.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/activities.self-41585502fae9fb423e931307a26c359b80a70347e93fa9e7b0373d612422843a.css?body=1" for ::1 at 2017-05-02 17:11:49 -0500
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:11:51 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[35mActivity Load (0.8ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:12:10 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheet.html.erb (239.0ms)
+  Rendered layouts/_javascript.html.erb (147.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_navbar.html.erb (4.2ms)
+  Rendered layouts/_page.html.erb (13.9ms)
+Completed 200 OK in 438ms (Views: 433.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/activities.self-4a4bf0061cd1185caaccac0ea39ceb26813760198e984f133b4dd5677577956b.css?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/components/activities/event_application.self-648dc6b763139cfc7b524791ccc52d4fd27148e49e764983b4a4c8888b3f2a1a.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/components/activities/event_table.self-3be0eff02a1acab1fbffbab22b789f092801ce39845e00ba1d1524e7b4b18e3c.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/components/activities/event.self-38b4a74b1fb4d70c313ca237f988225ef319ee09a9d21c483116b32080bf1014.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/components/activities/search_form.self-62724fa0e67e87edea615060538b04b1649362367bb40456ce1cf474d8db3765.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/components/activities/new_form.self-a530da925716642858554edfe68d77b10e4c9f6c22a91fa9da01fe43338aa617.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/components/sort_column.self-fe269aba988f1838e1962426dced8967da3186e127045aecdc45bf7608561912.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/activities.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 17:12:10 -0500
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:12:11 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[36mActivity Load (1.1ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc[0m
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:13:51 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_stylesheet.html.erb (87.1ms)
+  Rendered layouts/_javascript.html.erb (1462.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_page.html.erb (1.8ms)
+Completed 200 OK in 1590ms (Views: 1574.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/activities.self-64de555fd479c16f7083edc3e2f8f2e03651f4d7ed6fa89b69a21f48bfea8fa1.css?body=1" for ::1 at 2017-05-02 17:13:54 -0500
+
+
+Started GET "/assets/components/activities/event_application.self-9276f9edfe7bed086b5206d01a6c60f2380d93bce5daeb485beb4d7ce253221c.js?body=1" for ::1 at 2017-05-02 17:13:54 -0500
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:13:55 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[35mActivity Load (4.2ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc
+Completed 200 OK in 42ms (Views: 0.3ms | ActiveRecord: 16.7ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:14:09 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_stylesheet.html.erb (21.9ms)
+  Rendered layouts/_javascript.html.erb (1251.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_page.html.erb (2.0ms)
+Completed 200 OK in 1292ms (Views: 1291.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/activities.self-64de555fd479c16f7083edc3e2f8f2e03651f4d7ed6fa89b69a21f48bfea8fa1.css?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/components/activities/event_application.self-9276f9edfe7bed086b5206d01a6c60f2380d93bce5daeb485beb4d7ce253221c.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/components/activities/event_table.self-3be0eff02a1acab1fbffbab22b789f092801ce39845e00ba1d1524e7b4b18e3c.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/components/activities/event.self-38b4a74b1fb4d70c313ca237f988225ef319ee09a9d21c483116b32080bf1014.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/components/activities/search_form.self-62724fa0e67e87edea615060538b04b1649362367bb40456ce1cf474d8db3765.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/components/activities/new_form.self-8e7f562a1f08bec564da4f24e920c3d09f57660ea95d5130173bf773a41b8c7b.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/components/sort_column.self-fe269aba988f1838e1962426dced8967da3186e127045aecdc45bf7608561912.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/activities.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 17:14:11 -0500
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:14:12 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[36mActivity Load (0.5ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc[0m
+Completed 200 OK in 30ms (Views: 0.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:14:23 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheet.html.erb (25.4ms)
+  Rendered layouts/_javascript.html.erb (1927.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_page.html.erb (2.2ms)
+Completed 200 OK in 1973ms (Views: 1970.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/components/activities/new_form.self-b2c71f6275e4c00ca6b85b22362fc5adb812a43f098fa0c92b60dc2a1ba56437.js?body=1" for ::1 at 2017-05-02 17:14:25 -0500
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:14:27 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[35mActivity Load (1.0ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc
+Completed 200 OK in 66ms (Views: 0.3ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:14:43 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_stylesheet.html.erb (27.9ms)
+  Rendered layouts/_javascript.html.erb (97.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_page.html.erb (2.7ms)
+Completed 200 OK in 155ms (Views: 152.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:14:45 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[36mActivity Load (4.4ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc[0m
+Completed 200 OK in 73ms (Views: 0.6ms | ActiveRecord: 20.6ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:16:19 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_stylesheet.html.erb (168.6ms)
+  Rendered layouts/_javascript.html.erb (1418.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_page.html.erb (1.9ms)
+Completed 200 OK in 1617ms (Views: 1614.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/activities.self-347f2f1c72e08a21617ee4e2fdb5dc7be2a2acf95261f5ad520493a06396fd8b.css?body=1" for ::1 at 2017-05-02 17:16:21 -0500
+
+
+Started GET "/assets/components/activities/new_form.self-1e7261c940cb5b35ab69969559f90987db32e26466a4b683e4e7a2b799664b29.js?body=1" for ::1 at 2017-05-02 17:16:22 -0500
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:16:22 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[35mActivity Load (2.4ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc
+Completed 200 OK in 46ms (Views: 2.1ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:16:46 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_stylesheet.html.erb (123.7ms)
+  Rendered layouts/_javascript.html.erb (72.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_page.html.erb (1.5ms)
+Completed 200 OK in 214ms (Views: 213.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/activities.self-7b30fcd5942849046e2c87bb6f30344daf6e5bb2c98063d494b0476c3df9a2ae.css?body=1" for ::1 at 2017-05-02 17:16:47 -0500
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:16:48 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[36mActivity Load (0.5ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc[0m
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:16:56 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_stylesheet.html.erb (88.9ms)
+  Rendered layouts/_javascript.html.erb (89.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_page.html.erb (1.9ms)
+Completed 200 OK in 192ms (Views: 190.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 17:16:56 -0500
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 17:16:56 -0500
+
+
+Started GET "/assets/activities.self-7376ccadc67c6bf3c29f6a49b78e6f111265c9d2623449e386d5a8fb019ab0da.css?body=1" for ::1 at 2017-05-02 17:16:56 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 17:16:56 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 17:16:56 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 17:16:56 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 17:16:56 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 17:16:56 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 17:16:57 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 17:16:57 -0500
+
+
+Started GET "/assets/components/activities/event_table.self-3be0eff02a1acab1fbffbab22b789f092801ce39845e00ba1d1524e7b4b18e3c.js?body=1" for ::1 at 2017-05-02 17:16:57 -0500
+
+
+Started GET "/assets/components/activities/event.self-38b4a74b1fb4d70c313ca237f988225ef319ee09a9d21c483116b32080bf1014.js?body=1" for ::1 at 2017-05-02 17:16:57 -0500
+
+
+Started GET "/assets/components/activities/event_application.self-9276f9edfe7bed086b5206d01a6c60f2380d93bce5daeb485beb4d7ce253221c.js?body=1" for ::1 at 2017-05-02 17:16:57 -0500
+
+
+Started GET "/assets/components/activities/new_form.self-1e7261c940cb5b35ab69969559f90987db32e26466a4b683e4e7a2b799664b29.js?body=1" for ::1 at 2017-05-02 17:16:57 -0500
+
+
+Started GET "/assets/components/sort_column.self-fe269aba988f1838e1962426dced8967da3186e127045aecdc45bf7608561912.js?body=1" for ::1 at 2017-05-02 17:16:57 -0500
+
+
+Started GET "/assets/activities.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2017-05-02 17:16:57 -0500
+
+
+Started GET "/assets/components/activities/search_form.self-62724fa0e67e87edea615060538b04b1649362367bb40456ce1cf474d8db3765.js?body=1" for ::1 at 2017-05-02 17:16:57 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 17:16:57 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 17:16:57 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 17:16:57 -0500
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:16:58 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[35mActivity Load (2.8ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/activities?sort_by=description&order=asc" for ::1 at 2017-05-02 17:17:10 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"description", "order"=>"asc"}
+  [1m[36mActivity Load (4.4ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY description asc[0m
+Completed 200 OK in 39ms (Views: 1.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/api/activities?sort_by=description&order=desc" for ::1 at 2017-05-02 17:17:11 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"description", "order"=>"desc"}
+  [1m[35mActivity Load (2.1ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY description desc
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/activities?sort_by=name&order=asc" for ::1 at 2017-05-02 17:17:13 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"asc"}
+  [1m[36mActivity Load (0.5ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/activities?sort_by=name&order=desc" for ::1 at 2017-05-02 17:17:13 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[35mActivity Load (0.6ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name desc
+Completed 200 OK in 8ms (Views: 1.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/activities/search?query=q" for ::1 at 2017-05-02 17:17:15 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"q"}
+  [1m[36mActivity Load (4.9ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%q%' OR description LIKE '%q%')[0m
+Completed 200 OK in 20ms (Views: 8.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/api/activities/search?query=qw" for ::1 at 2017-05-02 17:17:15 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"qw"}
+  [1m[35mActivity Load (0.6ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%qw%' OR description LIKE '%qw%')
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/activities/search?query=q" for ::1 at 2017-05-02 17:17:16 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"q"}
+  [1m[36mActivity Load (0.5ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%q%' OR description LIKE '%q%')[0m
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/activities/search?query=" for ::1 at 2017-05-02 17:17:17 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%%' OR description LIKE '%%')
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities/search?query=A" for ::1 at 2017-05-02 17:17:19 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"A"}
+  [1m[36mActivity Load (0.6ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%A%' OR description LIKE '%A%')[0m
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/activities/search?query=AL" for ::1 at 2017-05-02 17:17:19 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"AL"}
+  [1m[35mActivity Load (0.5ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%AL%' OR description LIKE '%AL%')
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/activities/search?query=A" for ::1 at 2017-05-02 17:17:20 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"A"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%A%' OR description LIKE '%A%')[0m
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities/search?query=" for ::1 at 2017-05-02 17:17:20 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%%' OR description LIKE '%%')
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/activities/search?query=a" for ::1 at 2017-05-02 17:17:21 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"a"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%a%' OR description LIKE '%a%')[0m
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities/search?query=ac" for ::1 at 2017-05-02 17:17:22 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"ac"}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%ac%' OR description LIKE '%ac%')
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities/search?query=act" for ::1 at 2017-05-02 17:17:22 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"act"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%act%' OR description LIKE '%act%')[0m
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities/search?query=acti" for ::1 at 2017-05-02 17:17:22 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"acti"}
+  [1m[35mActivity Load (0.5ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%acti%' OR description LIKE '%acti%')
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/activities/search?query=activ" for ::1 at 2017-05-02 17:17:31 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"activ"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%activ%' OR description LIKE '%activ%')[0m
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities/search?query=activi" for ::1 at 2017-05-02 17:17:31 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"activi"}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%activi%' OR description LIKE '%activi%')
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities/search?query=activid" for ::1 at 2017-05-02 17:17:32 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"activid"}
+  [1m[36mActivity Load (0.6ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%activid%' OR description LIKE '%activid%')[0m
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/activities/search?query=activida" for ::1 at 2017-05-02 17:17:32 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"activida"}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%activida%' OR description LIKE '%activida%')
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities/search?query=actividad" for ::1 at 2017-05-02 17:17:32 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>"actividad"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE (name LIKE '%actividad%' OR description LIKE '%actividad%')[0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities/search?query=" for ::1 at 2017-05-02 17:17:47 -0500
+Processing by Api::ActivitiesController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[35mActivity Load (1.7ms)[0m  SELECT `activities`.* FROM `activities` WHERE (name LIKE '%%' OR description LIKE '%%')
+Completed 200 OK in 39ms (Views: 26.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/activities" for ::1 at 2017-05-02 17:18:10 -0500
+Processing by Api::ActivitiesController#create as JSON
+  Parameters: {"activity"=>{"name"=>"ActivityNew", "description"=>"Esta es una muy buena descripción"}}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO `activities` (`name`, `description`, `created_at`, `updated_at`) VALUES ('ActivityNew', 'Esta es una muy buena descripción', '2017-05-02 22:18:10', '2017-05-02 22:18:10')
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 28ms (Views: 3.7ms | ActiveRecord: 5.2ms)
+
+
+Started PUT "/api/activities/18" for ::1 at 2017-05-02 17:18:22 -0500
+Processing by Api::ActivitiesController#update as JSON
+  Parameters: {"activity"=>{"name"=>"ActivityNew", "description"=>"Esta es una muy buena descripción2"}, "id"=>"18"}
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `activities` WHERE `activities`.`id` = 18
+  [1m[36mActivity Load (1.3ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE `activities`.`id` = 18[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (8.9ms)[0m  [1mUPDATE `activities` SET `description` = 'Esta es una muy buena descripción2', `updated_at` = '2017-05-02 22:18:22' WHERE `activities`.`id` = 18[0m
+  [1m[35m (1.6ms)[0m  COMMIT
+Completed 200 OK in 70ms (Views: 23.3ms | ActiveRecord: 13.1ms)
+
+
+Started PUT "/api/activities/18" for ::1 at 2017-05-02 17:18:32 -0500
+Processing by Api::ActivitiesController#update as JSON
+  Parameters: {"activity"=>{"name"=>"ActivityNew", "description"=>"Esta es una muy buena descripción22"}, "id"=>"18"}
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `activities` WHERE `activities`.`id` = 18[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.* FROM `activities` WHERE `activities`.`id` = 18
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.3ms)[0m  UPDATE `activities` SET `description` = 'Esta es una muy buena descripción22', `updated_at` = '2017-05-02 22:18:32' WHERE `activities`.`id` = 18
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 1.1ms | ActiveRecord: 5.3ms)
+
+
+Started PUT "/api/activities/18" for ::1 at 2017-05-02 17:18:41 -0500
+Processing by Api::ActivitiesController#update as JSON
+  Parameters: {"activity"=>{"name"=>"ActivityNew1", "description"=>"Esta es una muy buena descripción22"}, "id"=>"18"}
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `activities` WHERE `activities`.`id` = 18
+  [1m[36mActivity Load (0.5ms)[0m  [1mSELECT `activities`.* FROM `activities` WHERE `activities`.`id` = 18[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE `activities` SET `name` = 'ActivityNew1', `updated_at` = '2017-05-02 22:18:41' WHERE `activities`.`id` = 18[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+Completed 200 OK in 12ms (Views: 1.0ms | ActiveRecord: 2.7ms)
+
+
+Started DELETE "/api/activities/18" for ::1 at 2017-05-02 17:18:45 -0500
+Processing by Api::ActivitiesController#destroy as JSON
+  Parameters: {"id"=>"18"}
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM `activities` WHERE `activities`.`id` = 18[0m
+  [1m[35mActivity Load (1.0ms)[0m  SELECT `activities`.* FROM `activities` WHERE `activities`.`id` = 18
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.7ms)[0m  UPDATE `activity_logs` SET `activity_logs`.`activity_id` = NULL WHERE `activity_logs`.`activity_id` = 18
+  [1m[36mSQL (1.1ms)[0m  [1mDELETE FROM `activities` WHERE `activities`.`id` = 18[0m
+  [1m[35m (1.5ms)[0m  COMMIT
+Completed 204 No Content in 63ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 17:18:50 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheet.html.erb (35.4ms)
+  Rendered layouts/_javascript.html.erb (75.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_page.html.erb (2.2ms)
+Completed 200 OK in 132ms (Views: 130.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 17:18:51 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[36mAssistant Load (1.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 38ms (Views: 0.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/assistants/search?query=i" for ::1 at 2017-05-02 17:18:58 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"i"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%i%' OR address LIKE '%i%' OR phone LIKE '%i%')
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=is" for ::1 at 2017-05-02 17:18:58 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"is"}
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%is%' OR address LIKE '%is%' OR phone LIKE '%is%')[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants/search?query=i" for ::1 at 2017-05-02 17:18:59 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"i"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%i%' OR address LIKE '%i%' OR phone LIKE '%i%')
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=" for ::1 at 2017-05-02 17:19:00 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%%' OR address LIKE '%%' OR phone LIKE '%%')[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/assistants" for ::1 at 2017-05-02 17:19:31 -0500
+Processing by Api::AssistantsController#create as JSON
+  Parameters: {"assistant"=>{"name"=>"NuevaEducadora", "group"=>"2", "address"=>"Ninguna", "phone"=>"que te importa"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `assistants` (`name`, `group`, `address`, `phone`, `created_at`, `updated_at`) VALUES ('NuevaEducadora', '2', 'Ninguna', 'que te importa', '2017-05-02 22:19:31', '2017-05-02 22:19:31')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 201 Created in 8ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/api/assistants/13" for ::1 at 2017-05-02 17:19:47 -0500
+Processing by Api::AssistantsController#update as JSON
+  Parameters: {"assistant"=>{"name"=>"NuevaEducadoras", "group"=>"22", "address"=>"Todas", "phone"=>"come torta"}, "id"=>"13"}
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM `assistants` WHERE `assistants`.`id` = 13[0m
+  [1m[35mAssistant Load (0.6ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE `assistants`.`id` = 13
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.6ms)[0m  UPDATE `assistants` SET `name` = 'NuevaEducadoras', `group` = '22', `address` = 'Todas', `phone` = 'come torta', `updated_at` = '2017-05-02 22:19:47' WHERE `assistants`.`id` = 13
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 43ms (Views: 0.7ms | ActiveRecord: 7.9ms)
+
+
+Started DELETE "/api/assistants/13" for ::1 at 2017-05-02 17:20:02 -0500
+Processing by Api::AssistantsController#destroy as JSON
+  Parameters: {"id"=>"13"}
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM `assistants` WHERE `assistants`.`id` = 13
+  [1m[36mAssistant Load (0.5ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE `assistants`.`id` = 13[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE `activity_logs` SET `activity_logs`.`assistant_id` = NULL WHERE `activity_logs`.`assistant_id` = 13[0m
+  [1m[35mSQL (4.3ms)[0m  DELETE FROM `assistants` WHERE `assistants`.`id` = 13
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 31ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=desc" for ::1 at 2017-05-02 17:20:59 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[35mAssistant Load (1.4ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 22ms (Views: 0.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=asc" for ::1 at 2017-05-02 17:21:00 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"asc"}
+  [1m[36mAssistant Load (0.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=desc" for ::1 at 2017-05-02 17:21:01 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[35mAssistant Load (1.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=asc" for ::1 at 2017-05-02 17:21:01 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"asc"}
+  [1m[36mAssistant Load (0.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=desc" for ::1 at 2017-05-02 17:21:01 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=asc" for ::1 at 2017-05-02 17:21:10 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"asc"}
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=desc" for ::1 at 2017-05-02 17:21:10 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=group&order=asc" for ::1 at 2017-05-02 17:21:11 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"group", "order"=>"asc"}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants?sort_by=group&order=desc" for ::1 at 2017-05-02 17:21:12 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"group", "order"=>"desc"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants?sort_by=address&order=asc" for ::1 at 2017-05-02 17:21:13 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"asc"}
+  [1m[36mAssistant Load (1.4ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/assistants?sort_by=address&order=desc" for ::1 at 2017-05-02 17:21:13 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"desc"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=address&order=asc" for ::1 at 2017-05-02 17:21:13 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"asc"}
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=address&order=desc" for ::1 at 2017-05-02 17:21:14 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"desc"}
+  [1m[35mAssistant Load (0.5ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/assistants?sort_by=phone&order=asc" for ::1 at 2017-05-02 17:21:14 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"phone", "order"=>"asc"}
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=phone&order=desc" for ::1 at 2017-05-02 17:21:14 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"phone", "order"=>"desc"}
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=phone&order=asc" for ::1 at 2017-05-02 17:21:15 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"phone", "order"=>"asc"}
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:21:25 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_stylesheet.html.erb (85.9ms)
+  Rendered layouts/_javascript.html.erb (115.8ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_navbar.html.erb (2.7ms)
+  Rendered layouts/_page.html.erb (4.2ms)
+Completed 200 OK in 231ms (Views: 229.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:21:27 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[35mActivity Load (1.6ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc
+Completed 200 OK in 31ms (Views: 1.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/activities?sort_by=name&order=desc" for ::1 at 2017-05-02 17:21:28 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name desc[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities?sort_by=name&order=asc" for ::1 at 2017-05-02 17:21:29 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"asc"}
+  [1m[35mActivity Load (0.7ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/activities?sort_by=description&order=asc" for ::1 at 2017-05-02 17:21:29 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"description", "order"=>"asc"}
+  [1m[36mActivity Load (0.5ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY description asc[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/activities?sort_by=description&order=desc" for ::1 at 2017-05-02 17:21:29 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"description", "order"=>"desc"}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY description desc
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/activities?sort_by=description&order=asc" for ::1 at 2017-05-02 17:21:30 -0500
+Processing by Api::ActivitiesController#index as JSON
+  Parameters: {"sort_by"=>"description", "order"=>"asc"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY description asc[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 17:21:31 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_stylesheet.html.erb (204.2ms)
+  Rendered layouts/_javascript.html.erb (64.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_page.html.erb (1.9ms)
+Completed 200 OK in 289ms (Views: 285.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 17:21:32 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[35mAssistant Load (3.7ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 17:23:44 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_stylesheet.html.erb (33.5ms)
+  Rendered layouts/_javascript.html.erb (1341.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered layouts/_page.html.erb (3.1ms)
+Completed 200 OK in 1399ms (Views: 1397.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/components/assistants/new_form.self-78a2181e344ee742509a218121018e6bffd1f3dc8300fe2e80ef58d736469e79.js?body=1" for ::1 at 2017-05-02 17:23:46 -0500
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 17:23:47 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[36mAssistant Load (1.0ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 71ms (Views: 0.3ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 17:25:31 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheet.html.erb (131.5ms)
+  Rendered layouts/_javascript.html.erb (1546.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+  Rendered layouts/_page.html.erb (2.9ms)
+Completed 200 OK in 1713ms (Views: 1708.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assistants.self-4de0d2251fea53eec8f0c713ae3b44abbfd0e160ffd75457e9e5670c7dbaa78c.css?body=1" for ::1 at 2017-05-02 17:25:34 -0500
+
+
+Started GET "/assets/components/assistants/event_application.self-61405971b8f483429680a390d5e1c52f5fbf6d2f3b0c3c2657a4982dbcee36b2.js?body=1" for ::1 at 2017-05-02 17:25:34 -0500
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 17:25:36 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[35mAssistant Load (0.6ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 17:25:37 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_stylesheet.html.erb (17.2ms)
+  Rendered layouts/_javascript.html.erb (317.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_page.html.erb (2.0ms)
+Completed 200 OK in 351ms (Views: 349.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/assistants.self-4de0d2251fea53eec8f0c713ae3b44abbfd0e160ffd75457e9e5670c7dbaa78c.css?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/components/assistants/event_application.self-61405971b8f483429680a390d5e1c52f5fbf6d2f3b0c3c2657a4982dbcee36b2.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/components/assistants/event_table.self-e2b7d4d0cccbf5633659766a29d39ec19dde136acdb8c9e0a57c1416fabdfedb.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/components/assistants/event.self-e42d5715fd1749ebded330a26ce6bfb523e597dcd822fb61a27cd100b9b7be5c.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/components/assistants/search_form.self-8f130f48866f32024f17a9efb3aaf425bc4bdf2a05acb7fbd817fe9aa51de866.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/components/assistants/new_form.self-78a2181e344ee742509a218121018e6bffd1f3dc8300fe2e80ef58d736469e79.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/components/sort_column.self-fe269aba988f1838e1962426dced8967da3186e127045aecdc45bf7608561912.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/assistants.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 17:25:38 -0500
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 17:25:39 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[36mAssistant Load (0.9ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 17:25:55 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_stylesheet.html.erb (16.6ms)
+  Rendered layouts/_javascript.html.erb (1441.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_page.html.erb (1.8ms)
+Completed 200 OK in 1471ms (Views: 1470.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/components/assistants/new_form.self-626df2668e820fd835082e5ad9ec27e2a6e2cedffb4567ec742e49e289d21793.js?body=1" for ::1 at 2017-05-02 17:25:57 -0500
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 17:25:58 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 29ms (Views: 0.4ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/api/assistants" for ::1 at 2017-05-02 17:26:19 -0500
+Processing by Api::AssistantsController#create as JSON
+  Parameters: {"assistant"=>{"name"=>"Nombre", "group"=>"Nombre", "address"=>"Nombre", "phone"=>"Nombre"}}
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `assistants` (`name`, `group`, `address`, `phone`, `created_at`, `updated_at`) VALUES ('Nombre', 'Nombre', 'Nombre', 'Nombre', '2017-05-02 22:26:19', '2017-05-02 22:26:19')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 54ms (Views: 10.2ms | ActiveRecord: 2.3ms)
+
+
+Started PUT "/api/assistants/14" for ::1 at 2017-05-02 17:26:31 -0500
+Processing by Api::AssistantsController#update as JSON
+  Parameters: {"assistant"=>{"name"=>"Nombre1", "group"=>"Nombre1", "address"=>"Nombre1", "phone"=>"Nombre1"}, "id"=>"14"}
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `assistants` WHERE `assistants`.`id` = 14
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE `assistants`.`id` = 14[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE `assistants` SET `name` = 'Nombre1', `group` = 'Nombre1', `address` = 'Nombre1', `phone` = 'Nombre1', `updated_at` = '2017-05-02 22:26:31' WHERE `assistants`.`id` = 14[0m
+  [1m[35m (2.0ms)[0m  COMMIT
+Completed 200 OK in 21ms (Views: 4.9ms | ActiveRecord: 4.0ms)
+
+
+Started DELETE "/api/assistants/14" for ::1 at 2017-05-02 17:26:34 -0500
+Processing by Api::AssistantsController#destroy as JSON
+  Parameters: {"id"=>"14"}
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM `assistants` WHERE `assistants`.`id` = 14[0m
+  [1m[35mAssistant Load (2.1ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE `assistants`.`id` = 14
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  UPDATE `activity_logs` SET `activity_logs`.`assistant_id` = NULL WHERE `activity_logs`.`assistant_id` = 14
+  [1m[36mSQL (1.5ms)[0m  [1mDELETE FROM `assistants` WHERE `assistants`.`id` = 14[0m
+  [1m[35m (1.3ms)[0m  COMMIT
+Completed 204 No Content in 49ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/api/assistants/search?query=a" for ::1 at 2017-05-02 17:26:38 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"a"}
+  [1m[36mAssistant Load (2.2ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%a%' OR address LIKE '%a%' OR phone LIKE '%a%')[0m
+Completed 200 OK in 65ms (Views: 7.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/assistants/search?query=al" for ::1 at 2017-05-02 17:26:38 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"al"}
+  [1m[35mAssistant Load (0.5ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%al%' OR address LIKE '%al%' OR phone LIKE '%al%')
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/assistants/search?query=ale" for ::1 at 2017-05-02 17:26:39 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"ale"}
+  [1m[36mAssistant Load (0.5ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%ale%' OR address LIKE '%ale%' OR phone LIKE '%ale%')[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/assistants/search?query=al" for ::1 at 2017-05-02 17:26:39 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"al"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%al%' OR address LIKE '%al%' OR phone LIKE '%al%')
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=a" for ::1 at 2017-05-02 17:26:39 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"a"}
+  [1m[36mAssistant Load (2.0ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%a%' OR address LIKE '%a%' OR phone LIKE '%a%')[0m
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/assistants/search?query=" for ::1 at 2017-05-02 17:26:40 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[35mAssistant Load (0.5ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%%' OR address LIKE '%%' OR phone LIKE '%%')
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/assistants/search?query=a" for ::1 at 2017-05-02 17:26:40 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"a"}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%a%' OR address LIKE '%a%' OR phone LIKE '%a%')[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=as" for ::1 at 2017-05-02 17:26:41 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"as"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%as%' OR address LIKE '%as%' OR phone LIKE '%as%')
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=a" for ::1 at 2017-05-02 17:26:42 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>"a"}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%a%' OR address LIKE '%a%' OR phone LIKE '%a%')[0m
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants/search?query=" for ::1 at 2017-05-02 17:26:42 -0500
+Processing by Api::AssistantsController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.* FROM `assistants` WHERE (name LIKE '%%' OR address LIKE '%%' OR phone LIKE '%%')
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=desc" for ::1 at 2017-05-02 17:26:44 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[36mAssistant Load (0.8ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/assistants?sort_by=group&order=asc" for ::1 at 2017-05-02 17:26:45 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"group", "order"=>"asc"}
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=group&order=desc" for ::1 at 2017-05-02 17:26:45 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"group", "order"=>"desc"}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants?sort_by=address&order=asc" for ::1 at 2017-05-02 17:26:45 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"asc"}
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=address&order=desc" for ::1 at 2017-05-02 17:26:46 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"desc"}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants?sort_by=phone&order=asc" for ::1 at 2017-05-02 17:26:46 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"phone", "order"=>"asc"}
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=phone&order=desc" for ::1 at 2017-05-02 17:26:46 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"phone", "order"=>"desc"}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 17:27:22 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_stylesheet.html.erb (21.4ms)
+  Rendered layouts/_javascript.html.erb (1411.3ms)
+Completed 500 Internal Server Error in 1443ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (33:12)
+  31 |               <SortColumn name="group"
+  32 |                           text="Grupo"
+> 33 |             </th>
+     |             ^
+  34 |             <th className="col-md-3 sortable">
+  35 |               <SortColumn name="address"
+  36 |                           text="Dirección"):
+    1: <!-- General Js -->
+    2: <%= javascript_include_tag 'application', params[:controller], 'data-turbolinks-track' => true %>
+    3: 
+    4: <% if @controlador != "static_pages" %>
+    5: 	<%= javascript_include_tag 'flat-ui.min.js', 'custom.js', 'data-turbolinks-track' => true %>
+  app/views/layouts/_javascript.html.erb:2:in `_app_views_layouts__javascript_html_erb___3463061283379813768_70101311132660'
+  app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb___4591067315589476404_70101301052220'
+
+
+  Rendered /Users/luisenriquemartinezvazquez/.rvm/gems/ruby-2.1.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.7ms)
+  Rendered /Users/luisenriquemartinezvazquez/.rvm/gems/ruby-2.1.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendered /Users/luisenriquemartinezvazquez/.rvm/gems/ruby-2.1.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/luisenriquemartinezvazquez/.rvm/gems/ruby-2.1.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.8ms)
+  Rendered /Users/luisenriquemartinezvazquez/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/luisenriquemartinezvazquez/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/luisenriquemartinezvazquez/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/luisenriquemartinezvazquez/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/luisenriquemartinezvazquez/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.1ms)
+  Rendered /Users/luisenriquemartinezvazquez/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/luisenriquemartinezvazquez/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/luisenriquemartinezvazquez/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (79.4ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 17:27:34 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_stylesheet.html.erb (17.6ms)
+  Rendered layouts/_javascript.html.erb (1129.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_page.html.erb (2.1ms)
+Completed 200 OK in 1162ms (Views: 1160.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/components/assistants/event_table.self-d170d79db460004875eb1906b249c9e76d6a3497131b321478a8d66fc26cfa2a.js?body=1" for ::1 at 2017-05-02 17:27:36 -0500
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 17:27:36 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[35mAssistant Load (0.5ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=desc" for ::1 at 2017-05-02 17:27:38 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=asc" for ::1 at 2017-05-02 17:27:39 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"asc"}
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=desc" for ::1 at 2017-05-02 17:27:39 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=asc" for ::1 at 2017-05-02 17:27:40 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"asc"}
+  [1m[35mAssistant Load (0.5ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=desc" for ::1 at 2017-05-02 17:27:40 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=address&order=asc" for ::1 at 2017-05-02 17:27:42 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"asc"}
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=address&order=desc" for ::1 at 2017-05-02 17:27:42 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"desc"}
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=address&order=asc" for ::1 at 2017-05-02 17:27:43 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"asc"}
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=address&order=desc" for ::1 at 2017-05-02 17:27:43 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"desc"}
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 17:28:43 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_stylesheet.html.erb (25.1ms)
+  Rendered layouts/_javascript.html.erb (56.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+  Rendered layouts/_page.html.erb (2.7ms)
+Completed 200 OK in 103ms (Views: 101.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 17:28:44 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[35mAssistant Load (0.7ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY name asc
+Completed 200 OK in 70ms (Views: 0.6ms | ActiveRecord: 23.1ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=desc" for ::1 at 2017-05-02 17:28:47 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[36mAssistant Load (0.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY name desc[0m
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=asc" for ::1 at 2017-05-02 17:28:47 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"asc"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY name asc
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants?sort_by=group&order=asc" for ::1 at 2017-05-02 17:28:48 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"group", "order"=>"asc"}
+  [1m[36mAssistant Load (2.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY group asc[0m
+  Rendered text template (0.0ms)
+Completed 500 Internal Server Error in 11ms (Views: 4.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/assistants?sort_by=group&order=asc" for ::1 at 2017-05-02 17:28:49 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"group", "order"=>"asc"}
+  [1m[35mAssistant Load (3.2ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY group asc
+  Rendered text template (0.0ms)
+Completed 500 Internal Server Error in 6ms (Views: 0.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 17:28:55 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_stylesheet.html.erb (22.5ms)
+  Rendered layouts/_javascript.html.erb (68.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_page.html.erb (3.5ms)
+Completed 200 OK in 109ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 17:28:56 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[36mAssistant Load (0.6ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY name asc[0m
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=desc" for ::1 at 2017-05-02 17:28:58 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[35mAssistant Load (1.7ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY name desc
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=asc" for ::1 at 2017-05-02 17:28:59 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"asc"}
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY name asc[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=desc" for ::1 at 2017-05-02 17:28:59 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[35mAssistant Load (0.6ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY name desc
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/assistants?sort_by=name&order=asc" for ::1 at 2017-05-02 17:29:00 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"asc"}
+  [1m[36mAssistant Load (1.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY name asc[0m
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/assistants?sort_by=address&order=asc" for ::1 at 2017-05-02 17:29:01 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"asc"}
+  [1m[35mAssistant Load (0.4ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY address asc
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/assistants?sort_by=address&order=desc" for ::1 at 2017-05-02 17:29:02 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"desc"}
+  [1m[36mAssistant Load (1.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY address desc[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/assistants?sort_by=phone&order=asc" for ::1 at 2017-05-02 17:29:02 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"phone", "order"=>"asc"}
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY phone asc
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/assistants?sort_by=phone&order=desc" for ::1 at 2017-05-02 17:29:03 -0500
+Processing by Api::AssistantsController#index as JSON
+  Parameters: {"sort_by"=>"phone", "order"=>"desc"}
+  [1m[36mAssistant Load (0.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY phone desc[0m
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bebes" for ::1 at 2017-05-02 17:29:08 -0500
+Processing by BabiesController#dashboard as HTML
+  Rendered babies/dashboard.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_stylesheet.html.erb (16.1ms)
+  Rendered layouts/_javascript.html.erb (47.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_page.html.erb (1.7ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/babies" for ::1 at 2017-05-02 17:29:09 -0500
+Processing by Api::BabiesController#index as JSON
+  [1m[35mBaby Load (9.8ms)[0m  SELECT `babies`.`id`, `babies`.`name`, `babies`.`birthday`, `babies`.`mother_name`, `babies`.`father_name`, `babies`.`address`, `babies`.`phone` FROM `babies`  ORDER BY name asc
+Completed 200 OK in 75ms (Views: 1.1ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:29:14 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_stylesheet.html.erb (18.5ms)
+  Rendered layouts/_javascript.html.erb (50.7ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_page.html.erb (1.8ms)
+Completed 200 OK in 95ms (Views: 93.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:29:15 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[36mActivity Load (0.8ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc[0m
+Completed 200 OK in 32ms (Views: 0.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 17:29:16 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_stylesheet.html.erb (15.8ms)
+  Rendered layouts/_javascript.html.erb (44.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_page.html.erb (2.5ms)
+Completed 200 OK in 73ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 17:29:17 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[35mAssistant Load (0.5ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY name asc
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bebes" for ::1 at 2017-05-02 17:29:18 -0500
+Processing by BabiesController#dashboard as HTML
+  Rendered babies/dashboard.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_stylesheet.html.erb (16.6ms)
+  Rendered layouts/_javascript.html.erb (67.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_page.html.erb (1.2ms)
+Completed 200 OK in 98ms (Views: 97.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/babies" for ::1 at 2017-05-02 17:29:20 -0500
+Processing by Api::BabiesController#index as JSON
+  [1m[36mBaby Load (0.9ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name`, `babies`.`birthday`, `babies`.`mother_name`, `babies`.`father_name`, `babies`.`address`, `babies`.`phone` FROM `babies`  ORDER BY name asc[0m
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/babies" for ::1 at 2017-05-02 17:29:53 -0500
+Processing by Api::BabiesController#create as JSON
+  Parameters: {"baby"=>{"name"=>"Nombresititito", "birthday"=>"2017-01-01", "mother_name"=>"mami", "father_name"=>"papi", "address"=>"nose", "phone"=>"nejbebeç"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO `babies` (`name`, `birthday`, `mother_name`, `father_name`, `address`, `phone`, `created_at`, `updated_at`) VALUES ('Nombresititito', '2017-01-01', 'mami', 'papi', 'nose', 'nejbebeç', '2017-05-02 22:29:53', '2017-05-02 22:29:53')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 201 Created in 12ms (Views: 0.6ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/api/babies" for ::1 at 2017-05-02 17:30:31 -0500
+Processing by Api::BabiesController#create as JSON
+  Parameters: {"baby"=>{"name"=>"Nombresititito2", "birthday"=>"2017-01-01", "mother_name"=>"mami", "father_name"=>"papi", "address"=>"direction", "phone"=>"hbjhbjhb"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `babies` (`name`, `birthday`, `mother_name`, `father_name`, `address`, `phone`, `created_at`, `updated_at`) VALUES ('Nombresititito2', '2017-01-01', 'mami', 'papi', 'direction', 'hbjhbjhb', '2017-05-02 22:30:31', '2017-05-02 22:30:31')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 407ms (Views: 0.4ms | ActiveRecord: 2.0ms)
+
+
+Started PUT "/api/babies/121" for ::1 at 2017-05-02 17:30:40 -0500
+Processing by Api::BabiesController#update as JSON
+  Parameters: {"baby"=>{"name"=>"Nombresititito2", "birthday"=>"2017-01-00", "mother_name"=>"mami", "father_name"=>"papi", "address"=>"direction", "phone"=>"hbjhbjhb"}, "id"=>"121"}
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `babies` WHERE `babies`.`id` = 121
+  [1m[36mBaby Load (0.6ms)[0m  [1mSELECT `babies`.* FROM `babies` WHERE `babies`.`id` = 121[0m
+  Rendered text template (0.1ms)
+Completed 400 Bad Request in 23ms (Views: 5.0ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/api/babies/121" for ::1 at 2017-05-02 17:30:54 -0500
+Processing by Api::BabiesController#update as JSON
+  Parameters: {"baby"=>{"name"=>"Nombresititito2", "birthday"=>"2017-01-01", "mother_name"=>"mami", "father_name"=>"papi", "address"=>"direction", "phone"=>"hbjhbjhb"}, "id"=>"121"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `babies` WHERE `babies`.`id` = 121
+  [1m[36mBaby Load (0.2ms)[0m  [1mSELECT `babies`.* FROM `babies` WHERE `babies`.`id` = 121[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 9ms (Views: 1.4ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/api/babies/121" for ::1 at 2017-05-02 17:31:01 -0500
+Processing by Api::BabiesController#update as JSON
+  Parameters: {"baby"=>{"name"=>"Nombresititito2", "birthday"=>"2017-01-05", "mother_name"=>"mami", "father_name"=>"papi", "address"=>"direction", "phone"=>"hbjhbjhb"}, "id"=>"121"}
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM `babies` WHERE `babies`.`id` = 121
+  [1m[36mBaby Load (0.5ms)[0m  [1mSELECT `babies`.* FROM `babies` WHERE `babies`.`id` = 121[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.8ms)[0m  [1mUPDATE `babies` SET `birthday` = '2017-01-05', `updated_at` = '2017-05-02 22:31:01' WHERE `babies`.`id` = 121[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+Completed 200 OK in 16ms (Views: 1.9ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/babies/search?query=a" for ::1 at 2017-05-02 17:31:06 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>"a"}
+  [1m[36mBaby Load (3.1ms)[0m  [1mSELECT `babies`.* FROM `babies` WHERE (name LIKE '%a%' OR birthday LIKE '%a%' OR mother_name LIKE '%a%' OR father_name LIKE '%a%' OR phone LIKE '%a%')[0m
+Completed 200 OK in 68ms (Views: 63.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/api/babies/search?query=as" for ::1 at 2017-05-02 17:31:07 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>"as"}
+  [1m[35mBaby Load (0.7ms)[0m  SELECT `babies`.* FROM `babies` WHERE (name LIKE '%as%' OR birthday LIKE '%as%' OR mother_name LIKE '%as%' OR father_name LIKE '%as%' OR phone LIKE '%as%')
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/babies/search?query=a" for ::1 at 2017-05-02 17:31:08 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>"a"}
+  [1m[36mBaby Load (0.7ms)[0m  [1mSELECT `babies`.* FROM `babies` WHERE (name LIKE '%a%' OR birthday LIKE '%a%' OR mother_name LIKE '%a%' OR father_name LIKE '%a%' OR phone LIKE '%a%')[0m
+Completed 200 OK in 47ms (Views: 45.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/babies/search?query=" for ::1 at 2017-05-02 17:31:08 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[35mBaby Load (0.9ms)[0m  SELECT `babies`.* FROM `babies` WHERE (name LIKE '%%' OR birthday LIKE '%%' OR mother_name LIKE '%%' OR father_name LIKE '%%' OR phone LIKE '%%')
+Completed 200 OK in 61ms (Views: 57.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/babies/search?query=1" for ::1 at 2017-05-02 17:31:08 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>"1"}
+  [1m[36mBaby Load (0.8ms)[0m  [1mSELECT `babies`.* FROM `babies` WHERE (name LIKE '%1%' OR birthday LIKE '%1%' OR mother_name LIKE '%1%' OR father_name LIKE '%1%' OR phone LIKE '%1%')[0m
+Completed 200 OK in 50ms (Views: 47.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/babies/search?query=" for ::1 at 2017-05-02 17:31:10 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[35mBaby Load (1.2ms)[0m  SELECT `babies`.* FROM `babies` WHERE (name LIKE '%%' OR birthday LIKE '%%' OR mother_name LIKE '%%' OR father_name LIKE '%%' OR phone LIKE '%%')
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/babies/search?query=o" for ::1 at 2017-05-02 17:31:11 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>"o"}
+  [1m[36mBaby Load (0.7ms)[0m  [1mSELECT `babies`.* FROM `babies` WHERE (name LIKE '%o%' OR birthday LIKE '%o%' OR mother_name LIKE '%o%' OR father_name LIKE '%o%' OR phone LIKE '%o%')[0m
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/babies/search?query=o1" for ::1 at 2017-05-02 17:31:11 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>"o1"}
+  [1m[35mBaby Load (0.6ms)[0m  SELECT `babies`.* FROM `babies` WHERE (name LIKE '%o1%' OR birthday LIKE '%o1%' OR mother_name LIKE '%o1%' OR father_name LIKE '%o1%' OR phone LIKE '%o1%')
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/babies/search?query=o" for ::1 at 2017-05-02 17:31:13 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>"o"}
+  [1m[36mBaby Load (0.5ms)[0m  [1mSELECT `babies`.* FROM `babies` WHERE (name LIKE '%o%' OR birthday LIKE '%o%' OR mother_name LIKE '%o%' OR father_name LIKE '%o%' OR phone LIKE '%o%')[0m
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/babies/search?query=" for ::1 at 2017-05-02 17:31:13 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[35mBaby Load (0.9ms)[0m  SELECT `babies`.* FROM `babies` WHERE (name LIKE '%%' OR birthday LIKE '%%' OR mother_name LIKE '%%' OR father_name LIKE '%%' OR phone LIKE '%%')
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/babies/search?query=o" for ::1 at 2017-05-02 17:31:15 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>"o"}
+  [1m[36mBaby Load (0.7ms)[0m  [1mSELECT `babies`.* FROM `babies` WHERE (name LIKE '%o%' OR birthday LIKE '%o%' OR mother_name LIKE '%o%' OR father_name LIKE '%o%' OR phone LIKE '%o%')[0m
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/babies/search?query=o2" for ::1 at 2017-05-02 17:31:15 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>"o2"}
+  [1m[35mBaby Load (0.5ms)[0m  SELECT `babies`.* FROM `babies` WHERE (name LIKE '%o2%' OR birthday LIKE '%o2%' OR mother_name LIKE '%o2%' OR father_name LIKE '%o2%' OR phone LIKE '%o2%')
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/babies/search?query=o" for ::1 at 2017-05-02 17:31:16 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>"o"}
+  [1m[36mBaby Load (0.7ms)[0m  [1mSELECT `babies`.* FROM `babies` WHERE (name LIKE '%o%' OR birthday LIKE '%o%' OR mother_name LIKE '%o%' OR father_name LIKE '%o%' OR phone LIKE '%o%')[0m
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/babies/search?query=" for ::1 at 2017-05-02 17:31:17 -0500
+Processing by Api::BabiesController#search as JSON
+  Parameters: {"query"=>""}
+  [1m[35mBaby Load (0.7ms)[0m  SELECT `babies`.* FROM `babies` WHERE (name LIKE '%%' OR birthday LIKE '%%' OR mother_name LIKE '%%' OR father_name LIKE '%%' OR phone LIKE '%%')
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/babies?sort_by=name&order=desc" for ::1 at 2017-05-02 17:31:20 -0500
+Processing by Api::BabiesController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"desc"}
+  [1m[36mBaby Load (1.2ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name`, `babies`.`birthday`, `babies`.`mother_name`, `babies`.`father_name`, `babies`.`address`, `babies`.`phone` FROM `babies`  ORDER BY name desc[0m
+Completed 200 OK in 29ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/babies?sort_by=name&order=asc" for ::1 at 2017-05-02 17:31:20 -0500
+Processing by Api::BabiesController#index as JSON
+  Parameters: {"sort_by"=>"name", "order"=>"asc"}
+  [1m[35mBaby Load (0.6ms)[0m  SELECT `babies`.`id`, `babies`.`name`, `babies`.`birthday`, `babies`.`mother_name`, `babies`.`father_name`, `babies`.`address`, `babies`.`phone` FROM `babies`  ORDER BY name asc
+Completed 200 OK in 30ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/babies?sort_by=birthday&order=asc" for ::1 at 2017-05-02 17:31:21 -0500
+Processing by Api::BabiesController#index as JSON
+  Parameters: {"sort_by"=>"birthday", "order"=>"asc"}
+  [1m[36mBaby Load (0.6ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name`, `babies`.`birthday`, `babies`.`mother_name`, `babies`.`father_name`, `babies`.`address`, `babies`.`phone` FROM `babies`  ORDER BY birthday asc[0m
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/babies?sort_by=mother_name&order=asc" for ::1 at 2017-05-02 17:31:22 -0500
+Processing by Api::BabiesController#index as JSON
+  Parameters: {"sort_by"=>"mother_name", "order"=>"asc"}
+  [1m[35mBaby Load (0.6ms)[0m  SELECT `babies`.`id`, `babies`.`name`, `babies`.`birthday`, `babies`.`mother_name`, `babies`.`father_name`, `babies`.`address`, `babies`.`phone` FROM `babies`  ORDER BY mother_name asc
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/babies?sort_by=father_name&order=asc" for ::1 at 2017-05-02 17:31:23 -0500
+Processing by Api::BabiesController#index as JSON
+  Parameters: {"sort_by"=>"father_name", "order"=>"asc"}
+  [1m[36mBaby Load (0.6ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name`, `babies`.`birthday`, `babies`.`mother_name`, `babies`.`father_name`, `babies`.`address`, `babies`.`phone` FROM `babies`  ORDER BY father_name asc[0m
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/babies?sort_by=address&order=asc" for ::1 at 2017-05-02 17:31:25 -0500
+Processing by Api::BabiesController#index as JSON
+  Parameters: {"sort_by"=>"address", "order"=>"asc"}
+  [1m[35mBaby Load (0.5ms)[0m  SELECT `babies`.`id`, `babies`.`name`, `babies`.`birthday`, `babies`.`mother_name`, `babies`.`father_name`, `babies`.`address`, `babies`.`phone` FROM `babies`  ORDER BY address asc
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/babies?sort_by=phone&order=asc" for ::1 at 2017-05-02 17:31:26 -0500
+Processing by Api::BabiesController#index as JSON
+  Parameters: {"sort_by"=>"phone", "order"=>"asc"}
+  [1m[36mBaby Load (0.6ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name`, `babies`.`birthday`, `babies`.`mother_name`, `babies`.`father_name`, `babies`.`address`, `babies`.`phone` FROM `babies`  ORDER BY phone asc[0m
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/babies" for ::1 at 2017-05-02 17:31:40 -0500
+Processing by Api::BabiesController#index as JSON
+  [1m[35mBaby Load (1.4ms)[0m  SELECT `babies`.`id`, `babies`.`name`, `babies`.`birthday`, `babies`.`mother_name`, `babies`.`father_name`, `babies`.`address`, `babies`.`phone` FROM `babies`  ORDER BY name asc
+Completed 200 OK in 36ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/activity_logs" for ::1 at 2017-05-02 17:32:07 -0500
+Processing by ActivityLogsController#dashboard as HTML
+  [1m[36mBaby Load (1.2ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name` FROM `babies`[0m
+  [1m[35mAssistant Load (0.5ms)[0m  SELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name` FROM `activities`[0m
+  Rendered activity_logs/dashboard.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_stylesheet.html.erb (53.4ms)
+  Rendered layouts/_javascript.html.erb (90.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_page.html.erb (2.8ms)
+Completed 200 OK in 290ms (Views: 180.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/activity_logs" for ::1 at 2017-05-02 17:32:09 -0500
+Processing by Api::ActivityLogsController#index as JSON
+  [1m[35mBaby Load (0.5ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36mActivityLog Load (3.2ms)[0m  [1mSELECT `activity_logs`.`id`, `activity_logs`.`baby_id`, `activity_logs`.`assistant_id`, `activity_logs`.`activity_id`, `activity_logs`.`start_time`, `activity_logs`.`stop_time`, `activity_logs`.`duration` FROM `activity_logs`  ORDER BY start_time desc[0m
+Completed 200 OK in 79ms (Views: 0.6ms | ActiveRecord: 6.9ms)
+
+
+Started POST "/api/activity_logs" for ::1 at 2017-05-02 17:32:28 -0500
+Processing by Api::ActivityLogsController#create as JSON
+  Parameters: {"activity_log"=>{"baby_id"=>"17", "assistant_id"=>"6", "activity_id"=>"4", "start_time"=>"2017/05/02 17:32:24"}}
+  [1m[35mBaby Load (0.5ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO `activity_logs` (`baby_id`, `assistant_id`, `activity_id`, `start_time`, `created_at`, `updated_at`) VALUES (17, 6, 4, '2017-05-02 17:32:24', '2017-05-02 22:32:28', '2017-05-02 22:32:28')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActivityLog Load (0.5ms)[0m  SELECT `activity_logs`.* FROM `activity_logs` WHERE `activity_logs`.`id` = 162
+Completed 201 Created in 23ms (Views: 0.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/activity_logs" for ::1 at 2017-05-02 17:32:45 -0500
+Processing by ActivityLogsController#dashboard as HTML
+  [1m[36mBaby Load (0.4ms)[0m  [1mSELECT `babies`.`id`, `babies`.`name` FROM `babies`[0m
+  [1m[35mAssistant Load (0.3ms)[0m  SELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name` FROM `activities`[0m
+  Rendered activity_logs/dashboard.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_stylesheet.html.erb (33.3ms)
+  Rendered layouts/_javascript.html.erb (49.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_page.html.erb (2.2ms)
+Completed 200 OK in 109ms (Views: 101.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-2ad7b122e9e7362abc2808a401f7ebfec96d8933baffcbdc3606dec0b8d0191f.css?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/bootstrap-datetimepicker.self-9335a464797c89676ed4b683a42a79838ce3ed5309aebe28771b2b0a96d1a072.css?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/activity_logs.self-3afaab9b30d7ced1287b89b3c811bdd5df225185aadfac69d243d9a7f866faf4.css?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/bootstrap.min.self-9c0884a82fa82b64bb6a3852b5700392b1b391792fdf2efee364bf8760acf9bc.css?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/custom.self-bcb429cafdc75fce33259e5a9c7afe394bdf371cfbedd96274563a700225b985.css?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/flat-ui.min.self-65c56674e633e2ab4c2e02795433e8d1dbadf24cbd8a3ce6945f4cc513a8664d.css?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/components/activity_logs/event_application.self-f3823cbe82c4b0648fbfb71b55b410a3ea205da337bb329fe799284a693fdaf7.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/components/activity_logs/event_table.self-c38786af86196fa0f5a7a0c959b675f08ddc130e9110a3655f4ee78405cb4f30.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/components/activity_logs/event.self-fe3a35b3db23cc88ee3dd8534c799d0a54345be5352b7b7ed794bdb0724eae80.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/components/activity_logs/search_form.self-41196231f154cc7abf43e19bf468d14141f382b90fddc0dddbed8e9127d6f9a5.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/components/activity_logs/new_form.self-fe5b7b88190aa18e83fc7294ad22359b08a3e8cdcde58f937581bc0207af6b45.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/moment.min.self-969ff4b784b8e57b40841eaf13a6cdcdb7992466d1595393a80f4b193c78a466.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/bootstrap-datetimepicker.self-9bf8b50ba86095fb5caaadd1ee11eaf661b3f4879f3ea5263d541e9804fd7b15.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/activity_logs.self-82d7cbba698ee835061a3f2a103805c2b6ec5becf403c89f1d5c9c3d81081d19.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/flat-ui.min.self-e71dc7c0f9c90c83da39ab89105a3b36588d969085046a558b3e409e843a6f4e.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/assets/custom.self-7acc8deb954ecbeaefe4b43ce063cd56b79f1c1249524c3b1d57dd06e5a4d481.js?body=1" for ::1 at 2017-05-02 17:32:45 -0500
+
+
+Started GET "/api/activity_logs" for ::1 at 2017-05-02 17:32:46 -0500
+Processing by Api::ActivityLogsController#index as JSON
+  [1m[35mBaby Load (0.5ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.5ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36mActivityLog Load (1.4ms)[0m  [1mSELECT `activity_logs`.`id`, `activity_logs`.`baby_id`, `activity_logs`.`assistant_id`, `activity_logs`.`activity_id`, `activity_logs`.`start_time`, `activity_logs`.`stop_time`, `activity_logs`.`duration` FROM `activity_logs`  ORDER BY start_time desc[0m
+Completed 200 OK in 46ms (Views: 0.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/activity_logs/search?activity_log%5Bbaby_id%5D=17&activity_log%5Bassistant_id%5D=&activity_log%5Bstatus%5D=" for ::1 at 2017-05-02 17:32:51 -0500
+Processing by Api::ActivityLogsController#search as JSON
+  Parameters: {"activity_log"=>{"baby_id"=>"17", "assistant_id"=>"", "status"=>""}}
+  [1m[35mBaby Load (0.4ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36mActivityLog Load (1.5ms)[0m  [1mSELECT `activity_logs`.* FROM `activity_logs` WHERE `activity_logs`.`baby_id` = 17  ORDER BY start_time desc[0m
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/activity_logs/search?activity_log%5Bbaby_id%5D=17&activity_log%5Bassistant_id%5D=&activity_log%5Bstatus%5D=stop" for ::1 at 2017-05-02 17:33:08 -0500
+Processing by Api::ActivityLogsController#search as JSON
+  Parameters: {"activity_log"=>{"baby_id"=>"17", "assistant_id"=>"", "status"=>"stop"}}
+  [1m[35mBaby Load (0.4ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.2ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36mActivityLog Load (0.4ms)[0m  [1mSELECT `activity_logs`.* FROM `activity_logs` WHERE `activity_logs`.`baby_id` = 17 AND (`activity_logs`.`stop_time` IS NOT NULL)  ORDER BY start_time desc[0m
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/activity_logs/search?activity_log%5Bbaby_id%5D=17&activity_log%5Bassistant_id%5D=&activity_log%5Bstatus%5D=start" for ::1 at 2017-05-02 17:33:10 -0500
+Processing by Api::ActivityLogsController#search as JSON
+  Parameters: {"activity_log"=>{"baby_id"=>"17", "assistant_id"=>"", "status"=>"start"}}
+  [1m[35mBaby Load (0.4ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.4ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.5ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36mActivityLog Load (0.4ms)[0m  [1mSELECT `activity_logs`.* FROM `activity_logs` WHERE `activity_logs`.`baby_id` = 17 AND `activity_logs`.`stop_time` IS NULL  ORDER BY start_time desc[0m
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/activity_logs/search?activity_log%5Bbaby_id%5D=17&activity_log%5Bassistant_id%5D=&activity_log%5Bstatus%5D=all" for ::1 at 2017-05-02 17:33:13 -0500
+Processing by Api::ActivityLogsController#search as JSON
+  Parameters: {"activity_log"=>{"baby_id"=>"17", "assistant_id"=>"", "status"=>"all"}}
+  [1m[35mBaby Load (1.2ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36mActivityLog Load (0.5ms)[0m  [1mSELECT `activity_logs`.* FROM `activity_logs` WHERE `activity_logs`.`baby_id` = 17  ORDER BY start_time desc[0m
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/activity_logs/search?activity_log%5Bbaby_id%5D=17&activity_log%5Bassistant_id%5D=6&activity_log%5Bstatus%5D=all" for ::1 at 2017-05-02 17:33:17 -0500
+Processing by Api::ActivityLogsController#search as JSON
+  Parameters: {"activity_log"=>{"baby_id"=>"17", "assistant_id"=>"6", "status"=>"all"}}
+  [1m[35mBaby Load (0.8ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.3ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36mActivityLog Load (1.5ms)[0m  [1mSELECT `activity_logs`.* FROM `activity_logs` WHERE `activity_logs`.`baby_id` = 17 AND `activity_logs`.`assistant_id` = 6  ORDER BY start_time desc[0m
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-02 17:34:16 -0500
+Processing by StaticPagesController#landing_page as HTML
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM `babies`
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM `activities`[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `activity_logs`
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `assistants`[0m
+  Rendered static_pages/landing_page.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_stylesheet.html.erb (42.0ms)
+  Rendered layouts/_javascript.html.erb (53.9ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_page.html.erb (0.2ms)
+Completed 200 OK in 157ms (Views: 129.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/api/activity_logs" for ::1 at 2017-05-02 17:34:26 -0500
+Processing by Api::ActivityLogsController#index as JSON
+  [1m[35mBaby Load (0.8ms)[0m  SELECT `babies`.`id`, `babies`.`name` FROM `babies`
+  [1m[36mAssistant Load (0.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name` FROM `assistants`[0m
+  [1m[35mActivity Load (0.3ms)[0m  SELECT `activities`.`id`, `activities`.`name` FROM `activities`
+  [1m[36mActivityLog Load (1.2ms)[0m  [1mSELECT `activity_logs`.`id`, `activity_logs`.`baby_id`, `activity_logs`.`assistant_id`, `activity_logs`.`activity_id`, `activity_logs`.`start_time`, `activity_logs`.`stop_time`, `activity_logs`.`duration` FROM `activity_logs`  ORDER BY start_time desc[0m
+Completed 200 OK in 102ms (Views: 0.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/babies" for ::1 at 2017-05-02 17:34:44 -0500
+Processing by Api::BabiesController#index as JSON
+  [1m[35mBaby Load (1.8ms)[0m  SELECT `babies`.`id`, `babies`.`name`, `babies`.`birthday`, `babies`.`mother_name`, `babies`.`father_name`, `babies`.`address`, `babies`.`phone` FROM `babies`  ORDER BY name asc
+Completed 200 OK in 47ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/actividades" for ::1 at 2017-05-02 17:35:46 -0500
+Processing by ActivitiesController#dashboard as HTML
+  Rendered activities/dashboard.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_stylesheet.html.erb (58.2ms)
+  Rendered layouts/_javascript.html.erb (146.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (2.5ms)
+  Rendered layouts/_page.html.erb (4.0ms)
+Completed 200 OK in 244ms (Views: 237.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/activities" for ::1 at 2017-05-02 17:35:48 -0500
+Processing by Api::ActivitiesController#index as JSON
+  [1m[36mActivity Load (1.9ms)[0m  [1mSELECT `activities`.`id`, `activities`.`name`, `activities`.`description` FROM `activities`  ORDER BY name asc[0m
+Completed 200 OK in 25ms (Views: 0.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/asistentes" for ::1 at 2017-05-02 17:35:49 -0500
+Processing by AssistantsController#dashboard as HTML
+  Rendered assistants/dashboard.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_stylesheet.html.erb (31.6ms)
+  Rendered layouts/_javascript.html.erb (56.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_page.html.erb (2.0ms)
+Completed 200 OK in 103ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 17:35:50 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[35mAssistant Load (0.9ms)[0m  SELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY name asc
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/assistants" for ::1 at 2017-05-02 17:35:56 -0500
+Processing by Api::AssistantsController#index as JSON
+  [1m[36mAssistant Load (0.5ms)[0m  [1mSELECT `assistants`.`id`, `assistants`.`name`, `assistants`.`group`, `assistants`.`address`, `assistants`.`phone` FROM `assistants`  ORDER BY name asc[0m
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.5ms)

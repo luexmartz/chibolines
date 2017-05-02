@@ -1,4 +1,6 @@
 module BabiesHelper
+
+	#get names of assistants names
 	def get_hash_objects
       @assistants_hash = {}
       Assistant.select(:id, :name).each do |assistant|  
@@ -6,6 +8,7 @@ module BabiesHelper
       end
 	end
 
+	#Make the hash of activity_logs for a baby
 	def activity_logs_make_hash(activity_logs)
 	    activity_logs_hash = []
 	    cont = 0
@@ -24,6 +27,7 @@ module BabiesHelper
 	      return activity_logs_hash
   	end
 
+  	#Make the hash of babies
   	def babies_make_hash(babies)
 	    babies_hash = []
 	    cont = 0
@@ -32,7 +36,7 @@ module BabiesHelper
 	        babies_hash[cont]["id"]              = baby.id
 	        babies_hash[cont]["name"]            = baby.name
 	        
-			#Get age 
+			#Get age in months
 			today    = DateTime.now
 			birthday = baby.birthday.to_time
 			months = ((today.year * 12) + today.month) - ((birthday.year * 12) + birthday.month)
@@ -52,6 +56,7 @@ module BabiesHelper
 	      return babies_hash
   	end
 
+  	#validate format of Date
 	def validate_date(date_str)
 	    valid_formats = ["%Y-%m-%d"] 
 	    valid_formats.each do |format|

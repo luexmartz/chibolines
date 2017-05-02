@@ -8,8 +8,11 @@
 //= require bootstrap.min.js
 
 $(document).ready(function(){
-	Object.keys(babies_hash).forEach(function (key) { 
 
+
+	Object.keys(babies_hash).forEach(function (key) { 
+      
+      //insert options for babies select new
 	  var value = babies_hash[key]
 	  var select_add = $('form[role="add"] #baby_id');
 	  var opt_add = document.createElement('option');
@@ -17,6 +20,7 @@ $(document).ready(function(){
 	  opt_add.innerHTML = value;
 	  $(select_add).append(opt_add);
 
+	  //insert options for babies select search
 	  var select_search = $('form[role="search"] #baby_id');
 	  var opt_search = document.createElement('option');
 	  opt_search.value = key;
@@ -26,6 +30,7 @@ $(document).ready(function(){
 
 	Object.keys(assistants_hash).forEach(function (key) { 
 
+	  //insert options for assistants select new
 	  var value = assistants_hash[key]
 	  var select_add = $('form[role="add"] #assistant_id');
 	  var opt_add = document.createElement('option');
@@ -33,6 +38,7 @@ $(document).ready(function(){
 	  opt_add.innerHTML = value;
 	  $(select_add).append(opt_add);
 
+	  //insert options for assistants select search
 	  var select_search = $('form[role="search"] #assistant_id');
 	  var opt_search = document.createElement('option');
 	  opt_search.value = key;
@@ -42,6 +48,7 @@ $(document).ready(function(){
 
 	Object.keys(activities_hash).forEach(function (key) { 
 
+	  //insert options for activities select new
 	  var value = activities_hash[key]
 	  var select_add = $('form[role="add"] #activity_id');
 	  var opt_add = document.createElement('option');
@@ -55,6 +62,7 @@ $(document).ready(function(){
 		format: 'YYYY/MM/DD H:mm:ss'
 	});
 
+	//triger for catch value into input for react
 	$(document).on("dp.change", "#datetimepicker1", function(e) {
 		// $(".start_time").val().trigger('change');
 		$(".start_time").trigger( "click" );

@@ -1,12 +1,16 @@
 var NewForm = React.createClass({
   propTypes: {
     name: React.PropTypes.string,
-    description: React.PropTypes.string
+    group: React.PropTypes.string,
+    address: React.PropTypes.string,
+    phone: React.PropTypes.string
   },
   getInitialState: function() {
     return {
       name: '',
-      description: ''
+      group: '',
+      address: '',
+      phone: ''
     }
   },
   handleAdd: function(e) {
@@ -14,9 +18,9 @@ var NewForm = React.createClass({
     var self = this;
     if (this.validForm()) {
       $.ajax({
-        url: '/api/activities',
+        url: '/api/assistants',
         method: 'POST',
-        data: { activity: self.state },
+        data: { assistant: self.state },
         success: function(data) {
           self.props.handleAdd(data);
           self.setState(self.getInitialState());
@@ -36,7 +40,7 @@ var NewForm = React.createClass({
     }
   },
   validForm: function() {
-    if (this.state.name && this.state.description) {
+    if (this.state.name && this.state.group && this.state.address && this.state.phone) {
       return true;
     } else {
       return false;
@@ -49,8 +53,8 @@ var NewForm = React.createClass({
   },
   render: function() {
     return(
-      <form className="form-inline" onSubmit={this.handleAdd}>  
-        <div className="form-group col-md-4">
+      <form className="form-inline" onSubmit={this.handleAdd}>
+        <div className="form-group col-md-3">
           <input type="text"
                  className="form-control"
                  name="name"
@@ -58,14 +62,32 @@ var NewForm = React.createClass({
                  ref="name"
                  value={this.state.name}
                  onChange={this.handleChange} />
-        </div>
-        <div className="form-group col-md-6">
+        </div>        
+        <div className="form-group col-md-2">
           <input type="text"
                  className="form-control"
-                 name="description"
-                 placeholder="Descripción"
-                 ref="description"
-                 value={this.state.description}
+                 name="group"
+                 placeholder="Grupo"
+                 ref="group"
+                 value={this.state.group}
+                 onChange={this.handleChange} />
+        </div>
+        <div className="form-group col-md-3">
+          <input type="text"
+                 className="form-control"
+                 name="address"
+                 placeholder="Dirección"
+                 ref="address"
+                 value={this.state.address}
+                 onChange={this.handleChange} />
+        </div>
+        <div className="form-group col-md-2">
+          <input type="text"
+                 className="form-control"
+                 name="phone"
+                 placeholder="Número de contacto"
+                 ref="phone"
+                 value={this.state.phone}
                  onChange={this.handleChange} />
         </div>
         <button type="submit" className="btn btn-primary col-md-1 pull-right">Agregar</button>

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   match '/activities',    to: 'activities#dashboard',    via: 'get', :path => :actividades
   match '/babies',        to: 'babies#dashboard',        via: 'get', :path => :bebes
+  match '/assistants',    to: 'assistants#dashboard',    via: 'get', :path => :asistentes
   match '/activity_logs', to: 'activity_logs#dashboard', via: 'get'
   match '/login',         to: 'static_pages#login',      via: 'get'
 
@@ -10,6 +11,10 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
 
       resources :activities, only: [:index, :create, :update, :destroy] do
+        get :search, on: :collection
+      end
+
+      resources :assistants, only: [:index, :create, :update, :destroy] do
         get :search, on: :collection
       end
 

@@ -1,4 +1,6 @@
 module ActivityLogsHelper
+
+  #get names of babies, assistants, activities
 	def get_hash_objects
       @babies_hash = {}
       Baby.select(:id, :name).each do |baby|  
@@ -14,6 +16,7 @@ module ActivityLogsHelper
       end 
 	end
 
+  #Make the hash of activity_logs
   def activity_logs_make_hash(activity_logs)
     activity_logs_hash = []
     cont = 0
@@ -32,6 +35,7 @@ module ActivityLogsHelper
       return activity_logs_hash
   end
 
+  #validate format of Date and Time
   def validate_datetime(date_str)
     valid_formats = ["%Y/%m/%d %H:%M:%S"] 
     valid_formats.each do |format|

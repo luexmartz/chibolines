@@ -7,8 +7,6 @@ gem 'rails', '4.2.6'
 gem 'mysql2', '>= 0.3.13', '< 0.5'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-# Use Bootstrap facebook by defect css framework
-# gem 'bootstrap-sass', '~> 3.3.6'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.14.30'
 # Use Uglifier as compressor for JavaScript assets
@@ -28,8 +26,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-#Api serializers gems
-# gem 'active_model_serializers'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
