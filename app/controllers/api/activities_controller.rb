@@ -12,9 +12,9 @@ module Api
 
 	    def search 
 	    	begin
-			  query = params[:query]
-			  activities = Activity.where('name LIKE ? OR description LIKE ?',
-			                       "%#{query}%", "%#{query}%")
+	    		
+			  activities = Activity.searching(params[:query])
+
 			  render json: activities, status: :ok
 		  	rescue Exception => e
 			  render nothing: true, status: :internal_server_error

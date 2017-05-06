@@ -3,6 +3,9 @@ class ActivityLog < ActiveRecord::Base
 	belongs_to :assistant
 	belongs_to :activity
 
+	scope :recent, -> { order("start_time desc") }
+	scope :by_status, -> status { status == "start" ? where(stop_time: nil) : where.not(stop_time: nil) }
+
 	def self.by_column_filter(baby_id = "", assistant_id = "")
 	  return where(baby_id: baby_id, assistant_id: assistant_id) if !baby_id.blank? && !assistant_id.blank?
 	  return where(baby_id: baby_id) if !baby_id.blank?

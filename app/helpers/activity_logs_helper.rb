@@ -21,18 +21,18 @@ module ActivityLogsHelper
     activity_logs_hash = []
     cont = 0
     activity_logs.each do |activity|  
-        activity_logs_hash[cont] = {}
-        activity_logs_hash[cont]["id"]         = activity.id
-        activity_logs_hash[cont]["baby"]       = @babies_hash[activity.baby_id]
-        activity_logs_hash[cont]["assistant"]  = @assistants_hash[activity.assistant_id]
-        activity_logs_hash[cont]["activity"]   = @activities_hash[activity.activity_id]
-        activity_logs_hash[cont]["start_time"] = activity.start_time.in_time_zone('America/Monterrey').utc.iso8601
-        activity_logs_hash[cont]["stop_time"]  = activity.stop_time.nil? ? "En progreso" : "Terminada"
-        activity_logs_hash[cont]["duration"]   = activity.duration
-        cont = cont + 1
-      end
+      activity_logs_hash[cont] = {}
+      activity_logs_hash[cont]["id"]         = activity.id
+      activity_logs_hash[cont]["baby"]       = @babies_hash[activity.baby_id]
+      activity_logs_hash[cont]["assistant"]  = @assistants_hash[activity.assistant_id]
+      activity_logs_hash[cont]["activity"]   = @activities_hash[activity.activity_id]
+      activity_logs_hash[cont]["start_time"] = activity.start_time.in_time_zone('America/Monterrey').utc.iso8601
+      activity_logs_hash[cont]["stop_time"]  = activity.stop_time.nil? ? "En progreso" : "Terminada"
+      activity_logs_hash[cont]["duration"]   = activity.duration
+      cont = cont + 1
+    end
 
-      return activity_logs_hash
+    return activity_logs_hash
   end
 
   #validate format of Date and Time

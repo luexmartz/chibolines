@@ -7,7 +7,7 @@ module Api
 
 		def index
 		  	begin
-		      activity_logs = ActivityLog.select(:id, :baby_id, :assistant_id, :activity_id, :start_time, :stop_time, :duration).order('start_time desc')
+		      activity_logs = ActivityLog.select(:id, :baby_id, :assistant_id, :activity_id, :start_time, :stop_time, :duration).recent
 		
 		      activity_logs_hash = activity_logs_make_hash(activity_logs)
 
@@ -19,11 +19,12 @@ module Api
 
 	    def search 
 	    	begin
-		      activity_logs = ActivityLog.by_column_filter(params[:activity_log][:baby_id], params[:activity_log][:assistant_id]).order('start_time desc')
 
-		      status = params[:activity_log][:status]
-		      activity_logs = activity_logs.where(stop_time: nil) if status == "start"
-		      activity_logs = activity_logs.where.not(stop_time: nil) if status == "stop"
+		      activity_logs = ActivityLog.by_column_filter(params[:activity_log][:baby_id], params[:activity_log][:assistant_id]).recent
+			  
+			  status = params[:activity_log][:status]
+
+			  activity_logs = activity_logs.by_status(status) if status != "all"
 
 			  activity_logs_hash = activity_logs_make_hash(activity_logs)
 

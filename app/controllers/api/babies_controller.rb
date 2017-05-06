@@ -19,9 +19,9 @@ module Api
 
 	    def search 
 	    	begin
-			  query = params[:query]
-			  babies = Baby.where('name LIKE ? OR birthday LIKE ? OR mother_name LIKE ? OR father_name LIKE ? OR phone LIKE ?',
-			                       "%#{query}%", "%#{query}%", "%#{query}%", "%#{query}%", "%#{query}%")
+
+			  babies = Baby.searching(params[:query])
+
 			  render json: babies, status: :ok
 		  	rescue Exception => e
 			  render nothing: true, status: :internal_server_error

@@ -12,11 +12,9 @@ module Api
 
 	    def search 
 	    	begin
-			  query = params[:query]
-			  puts "activities @"
-			  activities = Assistant.where('name LIKE ? OR address LIKE ? OR phone LIKE ?',
-			                       "%#{query}%", "%#{query}%", "%#{query}%")
-			  puts "activities #{activities}"
+	    		
+			  activities = Assistant.searching(params[:query])
+
 			  render json: activities, status: :ok
 		  	rescue Exception => e
 			  render nothing: true, status: :internal_server_error
