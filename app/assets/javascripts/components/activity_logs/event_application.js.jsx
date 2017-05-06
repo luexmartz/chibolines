@@ -8,7 +8,7 @@ var EventApplication = React.createClass({
   getDataFromApi: function() {
     var self = this;
     $.ajax({
-      url: '/api/activity_logs',
+      url: '/api/v1/activity_logs',
       success: function(data) {
         self.setState({ events: data });
       },

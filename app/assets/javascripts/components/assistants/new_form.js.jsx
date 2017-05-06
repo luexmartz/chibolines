@@ -18,7 +18,7 @@ var NewForm = React.createClass({
     var self = this;
     if (this.validForm()) {
       $.ajax({
-        url: '/api/assistants',
+        url: '/api/v1/assistants',
         method: 'POST',
         data: { assistant: self.state },
         success: function(data) {

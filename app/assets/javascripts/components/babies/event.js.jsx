@@ -14,7 +14,7 @@ var Event = React.createClass({
     e.preventDefault();
     $.ajax({
       method: 'DELETE',
-      url: '/api/babies/' + this.props.event.id,
+      url: '/api/v1/babies/' + this.props.event.id,
       success: function(data) {
         this.props.handleDeleteRecord(this.props.event);
       }.bind(this),
@@ -49,7 +49,7 @@ var Event = React.createClass({
       };
       $.ajax({
         method: 'PUT',
-        url: '/api/babies/' + this.props.event.id,
+        url: '/api/v1/babies/' + this.props.event.id,
         data: { baby: event_data },
         success: function(data) {
           this.props.handleUpdateRecord(this.props.event, data);

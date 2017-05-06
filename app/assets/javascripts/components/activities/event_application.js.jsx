@@ -10,7 +10,7 @@ var EventApplication = React.createClass({
   getDataFromApi: function() {
     var self = this;
     $.ajax({
-      url: '/api/activities',
+      url: '/api/v1/activities',
       method: 'GET',
       success: function(data) {
         self.setState({ events: data });
@@ -46,7 +46,7 @@ var EventApplication = React.createClass({
       order = 'asc';
     }
     $.ajax({
-      url: '/api/activities',
+      url: '/api/v1/activities',
       data: { sort_by: name, order: order },
       method: 'GET',
       success: function(data) {

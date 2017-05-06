@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   match '/login',         to: 'static_pages#login',      via: 'get'
 
   # Api v1 definition
-  namespace :api, defaults: { format: :json } do
-
+  namespace :api do
+    namespace :v1, defaults: { format: :json } do
       resources :activities, only: [:index, :create, :update, :destroy] do
         get :search, on: :collection
       end
@@ -27,6 +27,7 @@ Rails.application.routes.draw do
       end
 
       get  'babies/:id/activity_logs'    => 'babies#activities'
+    end
   end
 
   match ':not_found', to: 'static_pages#404', :costrains => {:not_found => /.*/}, via: 'get'

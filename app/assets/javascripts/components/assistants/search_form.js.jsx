@@ -3,7 +3,7 @@ var SearchForm = React.createClass({
     var query = React.findDOMNode(this.refs.query).value;
     var self = this;
     $.ajax({
-      url: '/api/assistants/search',
+      url: '/api/v1/assistants/search',
       data: { query: query },
       success: function(data) {
         self.props.handleSearch(data);

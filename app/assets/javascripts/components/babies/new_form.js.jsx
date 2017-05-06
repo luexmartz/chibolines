@@ -22,7 +22,7 @@ var NewForm = React.createClass({
     var self = this;
     if (this.validForm()) {
       $.ajax({
-        url: '/api/babies',
+        url: '/api/v1/babies',
         method: 'POST',
         data: { baby: self.state },
         success: function(data) {

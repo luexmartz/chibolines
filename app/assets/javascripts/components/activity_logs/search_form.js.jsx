@@ -16,7 +16,7 @@ var SearchForm = React.createClass({
     var self = this;
 
     $.ajax({
-      url: '/api/activity_logs/search',
+      url: '/api/v1/activity_logs/search',
       data: { activity_log: self.state },
       success: function(data) {
         self.props.handleSearch(data);
