@@ -12,7 +12,6 @@ class Api::V1::AssistantsController < Api::V1::BaseController
 
     def search 
     	begin
-    		
 		  activities = Assistant.searching(params[:query])
 
 		  render json: activities, status: :ok
@@ -27,7 +26,7 @@ class Api::V1::AssistantsController < Api::V1::BaseController
 		  if assistant.save
 		    render json: assistant, status: :created
 		  else
-		    render nothing: true, status: :bad_request
+		    render json: assistant.errors, status: :bad_request
 		  end
 	  	rescue Exception => e
 		  render nothing: true, status: :internal_server_error
@@ -39,7 +38,7 @@ class Api::V1::AssistantsController < Api::V1::BaseController
 	      if @assistant.update(assistant_params)
 	        render json: @assistant, status: :ok
 	      else
-	        render nothing: true, status: :unprocessable_entity
+		    render json: @assistant.errors, status: :bad_request
 	      end
       	rescue Exception => e
 		  render nothing: true, status: :internal_server_error

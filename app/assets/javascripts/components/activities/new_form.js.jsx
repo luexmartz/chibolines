@@ -24,7 +24,14 @@ var NewForm = React.createClass({
         error: function(xhr, status, error) {
           console.log(status, xhr, error, xhr.status);
           if(xhr.status == 400){
-            createNotification("danger", "No se puede agregar un nuevo registro, Error en los datos.");
+            if(xhr.responseText != ""){
+              var errors = xhr.responseText.split(",");
+              for (var i = 0; i < errors.length; i++) {
+                createNotification("danger", errors[i].match(/\[\"(.+)\"\]/)[1]);
+              }
+            }else{
+              createNotification("danger", "No se puede agregar un nuevo registro, Error en los datos.");
+            }          
           }
           if(xhr.status == 500){
             createNotification("danger", "No se puede agregar un nuevo registro");

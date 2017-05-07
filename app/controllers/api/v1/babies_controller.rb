@@ -19,7 +19,6 @@ class Api::V1::BabiesController < Api::V1::BaseController
 
     def search 
     	begin
-
 		  babies = Baby.searching(params[:query])
 
 		  render json: babies, status: :ok
@@ -57,7 +56,7 @@ class Api::V1::BabiesController < Api::V1::BaseController
 				  if baby.save
 				    render json: baby, status: :created
 				  else
-				    render nothing: true, status: :bad_request
+		   		 	render json: baby.errors, status: :bad_request
 				  end
 				else
 				  	render nothing: true, status: :unprocessable_entity
@@ -83,7 +82,7 @@ class Api::V1::BabiesController < Api::V1::BaseController
 			      if @baby.update(baby_params)
 			        render json: @baby, status: :ok
 			      else
-			        render nothing: true, status: :bad_request
+		   		 	render json: @baby.errors, status: :bad_request
 			      end
 			      
 				else

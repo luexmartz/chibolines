@@ -19,7 +19,6 @@ class Api::V1::ActivityLogsController < Api::V1::BaseController
 
     def search 
     	begin
-
 	      activity_logs = ActivityLog.by_column_filter(params[:activity_log][:baby_id], params[:activity_log][:assistant_id]).recent
 		  
 		  status = params[:activity_log][:status]
@@ -45,13 +44,10 @@ class Api::V1::ActivityLogsController < Api::V1::BaseController
 
 			    render json: activity_logs_hash[0].to_json, status: :created
 			  else
-			    render nothing: true, status: :bad_request
+		   		render json: activity_log.errors, status: :bad_request
 			  end
 		  else
 		  	render nothing: true, status: :bad_request
-
-		  	# Send message to view:
-		  	# render js: "createNotification('danger', 'Error en formato de fecha');", status: :bad_request
 		  end
 		rescue Exception => e
 		  render nothing: true, status: :internal_server_error
@@ -76,7 +72,7 @@ class Api::V1::ActivityLogsController < Api::V1::BaseController
 
 			    render json: activity_logs_hash[0].to_json, status: :ok
 		      else
-		        render nothing: true, status: :bad_request
+		   		render json: @activity_log.errors, status: :bad_request
 		      end
 		  else
 		  	render nothing: true, status: :unprocessable_entity

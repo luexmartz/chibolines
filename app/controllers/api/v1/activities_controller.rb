@@ -27,7 +27,7 @@ class Api::V1::ActivitiesController < Api::V1::BaseController
 		  if activity.save
 		    render json: activity, status: :created
 		  else
-		    render nothing: true, status: :bad_request
+		    render json: activity.errors, status: :bad_request
 		  end
 	  	rescue Exception => e
 		  render nothing: true, status: :internal_server_error
@@ -39,7 +39,7 @@ class Api::V1::ActivitiesController < Api::V1::BaseController
 	      if @activity.update(activity_params)
 	        render json: @activity, status: :ok
 	      else
-	        render nothing: true, status: :unprocessable_entity
+		    render json: @activity.errors, status: :bad_request
 	      end
       	rescue Exception => e
 		  render nothing: true, status: :internal_server_error
